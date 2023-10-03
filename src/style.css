@@ -1,0 +1,122 @@
+/* =========== Font Roboto ========= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* =======================================
+    Css Variable For Color
+    =======================================*/
+:root {
+  --bg-color: #f5fcff;
+
+  --primary-color: #5e3bee;
+  --secondary-color: #006b6a;
+
+  --text-color: #1c1e53;
+  --heading-color: #282938;
+  --white-color: #ffffff;
+}
+
+/* =================== 
+    General Styling
+    ================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================== 
+    Font Styling
+    ================= */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+}
+
+span {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+p,
+a {
+  /* font-size: 24px; */
+  font-size: clamp(14px, 5vw + 5px, 24px);
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+p.small {
+  font-size: 21px;
+}
+
+a {
+  font-size: 21px;
+}
+
+/* ===============
+    Button Styling
+    ============== */
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5.33px;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+}
