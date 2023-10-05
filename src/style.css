@@ -16,6 +16,8 @@
 
   /* Font size: 16.00px → 21.00px */
   --basic-font-size: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
+  /* Step 0: 28.00px → 64.00px */
+  --title-font-size: clamp(1.75rem, 0.9674rem + 3.913vw, 4rem);
 }
 
 /* =================== 
@@ -59,14 +61,22 @@ span {
   color: var(--primary-color);
 }
 
-h1 {
-  font-size: 74px;
+h1,
+.title-small {
+  font-size: var(--title-font-size);
   font-weight: 700;
   line-height: 120%;
 }
 
+.title-small {
+  /* Step 0: 20.00px → 54.00px */
+  font-size: clamp(1.25rem, 0.5109rem + 3.6957vw, 3.375rem);
+  color: var(--heading-color);
+  line-height: 100%;
+}
+
 h2 {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
   line-height: 120%;
 }
@@ -92,7 +102,7 @@ a {
 }
 
 p.small {
-  font-size: 21px;
+  font-size: var(--basic-font-size);
 }
 
 a {
@@ -121,4 +131,39 @@ a {
 .btn-outline {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+/* ===========================
+    Section Padding And Margin 
+    ===========================*/
+
+.container {
+  width: min(90%, 1400px);
+  margin-inline: auto;
+}
+
+.section-padding-1 {
+  padding: 100px 0;
+}
+
+.section-padding-2 {
+  padding: 90px 85px;
+}
+
+.section-padding-3 {
+  padding: 50px 85px;
+}
+
+@media screen and (max-width: 990px) {
+  .section-padding-1 {
+    padding: 60px 0;
+  }
+
+  .section-padding-2 {
+    padding: 50px 0;
+  }
+
+  .section-padding-3 {
+    padding: 20px 0;
+  }
 }
