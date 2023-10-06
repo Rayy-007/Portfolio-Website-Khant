@@ -15,6 +15,7 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <MySkill />
     </>
   );
 }
