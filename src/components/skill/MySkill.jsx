@@ -2,7 +2,7 @@ import React from "react";
 import "./myskill.css";
 
 function MySkill() {
-  return <div>MySkill</div>;
+  return <div>Hello</div>;
 }
 
 export default MySkill;
