@@ -12,37 +12,39 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
-      <a className="logo" href="#home">
-        <img src={logo} alt="Logo" />
-        <h4>Khant</h4>
-      </a>
+    <div className="nav-con">
+      <div className="navbar container">
+        <a className="logo" href="#home">
+          <img src={logo} alt="Logo" />
+          <h4>Khant</h4>
+        </a>
 
-      <ul style={styles} className="links">
-        <li>
-          <a className="active" href="#header">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#project">Projects</a>
-        </li>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#testimonial">Testimonials</a>
-        </li>
-      </ul>
+        <ul style={styles} className="links">
+          <li>
+            <a className="active" href="#header">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#testimonial">Testimonials</a>
+          </li>
+        </ul>
 
-      <div className="cta">
-        <button className="btn btn-outline">Contact Me</button>
+        <div className="cta">
+          <a className="btn btn-outline">Contact Me</a>
+        </div>
+
+        {/* Mobile Close and Menu */}
+        <TiThMenuOutline onClick={() => setOpen(true)} className="menu" />
+
+        {open && <ImCross onClick={() => setOpen(false)} className="close" />}
       </div>
-
-      {/* Mobile Close and Menu */}
-      <TiThMenuOutline onClick={() => setOpen(true)} className="menu" />
-
-      {open && <ImCross onClick={() => setOpen(false)} className="close" />}
     </div>
   );
 }
