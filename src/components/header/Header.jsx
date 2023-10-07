@@ -4,7 +4,7 @@ import ImageMe from "../../assets/Me-1.png";
 
 function Header() {
   return (
-    <div id="header" className="header section-padding-1">
+    <div id="Home" className="header section-padding-1">
       <div className="container  header-container">
         <div className="header-left">
           <h4>Hey, I am Min Khant</h4>

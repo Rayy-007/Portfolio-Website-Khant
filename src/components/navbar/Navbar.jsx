@@ -6,10 +6,25 @@ import logo from "../../assets/logo1.png";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
+  const [active, setActive] = React.useState("#Home");
 
   const styles = {
     transform: open && `translateX(0%)`,
   };
+
+  const navLinksName = ["Home", "Projects", "AboutMe", "Testimonials"];
+
+  const navLinks = navLinksName.map((link) => (
+    <li key={link}>
+      <a
+        className={active == `#${link}` ? "active" : ""}
+        href={`#${link}`}
+        onClick={() => setActive(`#${link}`)}
+      >
+        {link}
+      </a>
+    </li>
+  ));
 
   return (
     <div className="nav-con">
@@ -20,20 +35,7 @@ function Navbar() {
         </a>
 
         <ul style={styles} className="links">
-          <li>
-            <a className="active" href="#header">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#project">Projects</a>
-          </li>
-          <li>
-            <a href="#about">About Me</a>
-          </li>
-          <li>
-            <a href="#testimonial">Testimonials</a>
-          </li>
+          {navLinks}
         </ul>
 
         <div className="cta">
