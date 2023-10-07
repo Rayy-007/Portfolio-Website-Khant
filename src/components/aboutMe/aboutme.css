@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(3vw + 1rem);
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__content h4 {
+  margin-bottom: 0.2em;
+}
+
+.about__content p {
+  margin-top: 1.2em;
+}
+
+.about__img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about .about__img img {
+  max-width: 90%;
+}
+
+.about__content li {
+  list-style: disc;
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 720px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about__img img {
+    width: min(90%, 420px);
+  }
+}

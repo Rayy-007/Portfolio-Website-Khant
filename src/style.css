@@ -6,7 +6,6 @@
     =======================================*/
 :root {
   --bg-color: #f5fcff;
-
   --primary-color: #5e3bee;
   --secondary-color: #006b6a;
 
@@ -18,6 +17,9 @@
   --basic-font-size: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
   /* 28.00px → 64.00px */
   --title-font-size: clamp(1.75rem, 0.9674rem + 3.913vw, 4rem);
+
+  /* Transition Effect */
+  --smooth-move: 0.3s ease-in-out;
 }
 
 /* =================== 
@@ -38,6 +40,7 @@
 body {
   background-color: var(--white-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -98,8 +101,7 @@ h4 {
 
 p,
 a {
-  /* 18.00px → 24.00px */
-  font-size: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+  font-size: var(--basic-font-size);
   font-weight: 400;
   line-height: 150%;
   color: var(--text-color);
@@ -111,12 +113,8 @@ p.small {
 }
 
 p.extra-small {
-  /* Step 0: 14.00px → 18.00px */
+  /* 14.00px → 18.00px */
   font-size: clamp(0.875rem, 0.788rem + 0.4348vw, 1.125rem);
-}
-
-a {
-  font-size: var(--basic-font-size);
 }
 
 /* ===============
@@ -131,16 +129,80 @@ a {
   text-align: center;
   cursor: pointer;
   padding: 0.7em 0.9em;
+  z-index: 3; /* If I don't give that th Button will not appear */
+  transition: var(--smooth-move);
 }
 
+/* ================
+    Primary Button
+    ================ */
 .btn-primary {
-  background-color: var(--primary-color);
   color: var(--white-color);
+  position: relative;
 }
+
+.btn-primary::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+
+  border-radius: 4px; /* Want to get the perfect the Radius with Button */
+
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  transition: var(--smooth-move);
+  z-index: -2; /* This is relate with the above */
+}
+
+.btn-primary:hover::before {
+  width: 10%;
+  height: 30%;
+  transform: rotate(25deg);
+}
+.btn-primary:hover {
+  color: var(--text-color);
+}
+
+/* =================
+    Outline Button 
+    ================ */
 
 .btn-outline {
   background-color: transparent;
   color: var(--primary-color);
+
+  position: relative;
+}
+
+.btn-outline span {
+  visibility: hidden;
+}
+
+.btn-outline::before,
+.btn-outline::after {
+  position: absolute;
+  content: "Contact Me";
+  inset: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s ease-out;
+}
+
+.btn-outline::after {
+  content: "";
+  left: -100%;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-outline:hover::after {
+  content: "Contact Me";
+  left: 0%;
+}
+
+.btn-outline:hover::before {
+  right: -200%;
+  color: transparent;
 }
 
 /* ===========================

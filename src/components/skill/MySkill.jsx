@@ -44,7 +44,7 @@ function MySkill() {
   ));
 
   return (
-    <div id="Projects" className="myskill container section-padding-1">
+    <div id="Projects" className="myskill container section-padding-2">
       <div className="title">
         <h4>My Skills</h4>
         <h2>My Expertises</h2>
