@@ -171,38 +171,30 @@ p.extra-small {
 .btn-outline {
   background-color: transparent;
   color: var(--primary-color);
-
   position: relative;
 }
 
-.btn-outline span {
-  visibility: hidden;
-}
-
-.btn-outline::before,
-.btn-outline::after {
-  position: absolute;
-  content: "Contact Me";
-  inset: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 0.2s ease-out;
-}
-
-.btn-outline::after {
+.btn-outline::before {
   content: "";
-  left: -100%;
-  transition: 0.4s ease-in-out;
-}
-
-.btn-outline:hover::after {
-  content: "Contact Me";
-  left: 0%;
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary-color);
+  width: 10%;
+  height: 30%;
+  transform: rotate(25deg);
+  border-radius: 4px;
+  transition: var(--smooth-move);
+  z-index: -2;
 }
 
 .btn-outline:hover::before {
-  right: -200%;
-  color: transparent;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+}
+
+.btn-outline:hover {
+  color: var(--white-color);
 }
 
 /* ===========================

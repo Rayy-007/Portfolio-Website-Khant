@@ -33,8 +33,8 @@ function MySkill() {
     },
   ];
 
-  const skillCards = skillsData.map((data) => (
-    <div className="skill-card">
+  const skillCards = skillsData.map((data, index) => (
+    <div key={index} className="skill-card">
       <div className="img">
         <img src={data.image} alt="skills" />
       </div>
@@ -44,7 +44,7 @@ function MySkill() {
   ));
 
   return (
-    <div id="Projects" className="myskill container section-padding-2">
+    <div id="Skills" className="myskill container section-padding-2">
       <div className="title">
         <h4>My Skills</h4>
         <h2>My Expertises</h2>

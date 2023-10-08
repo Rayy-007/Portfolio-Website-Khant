@@ -12,7 +12,13 @@ function Navbar() {
     transform: open && `translateX(0%)`,
   };
 
-  const navLinksName = ["Home", "Projects", "AboutMe", "Testimonials"];
+  const navLinksName = [
+    "Home",
+    "Skills",
+    "AboutMe",
+    "Projects",
+    "Testimonials",
+  ];
 
   const navLinks = navLinksName.map((link) => (
     <li key={link}>
@@ -39,9 +45,7 @@ function Navbar() {
         </ul>
 
         <div className="cta">
-          <a className="btn btn-outline">
-            <span>Contact Me</span>
-          </a>
+          <a className="btn btn-outline">Contact Me</a>
         </div>
 
         {/* Mobile Close and Menu */}
