@@ -108,13 +108,13 @@ a {
 }
 
 p.small {
-  font-size: var(--basic-font-size);
   line-height: 130%;
 }
 
 p.extra-small {
   /* 14.00px → 18.00px */
   font-size: clamp(0.875rem, 0.788rem + 0.4348vw, 1.125rem);
+  line-height: 120%;
 }
 
 /* ===============

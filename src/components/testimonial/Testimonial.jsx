@@ -2,7 +2,7 @@ import React from "react";
 import "./testimonial.css";
 
 function Testtmonial() {
-  return <div>Testtmonial</div>;
+  return <div className="testimonial"></div>;
 }
 
 export default Testtmonial;
