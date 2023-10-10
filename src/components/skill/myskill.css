@@ -48,6 +48,6 @@
 }
 
 .skill-card img {
-  height: 53.33px;
-  width: 53.33px;
+  /* height: 53.33px; */
+  width: 3em;
 }

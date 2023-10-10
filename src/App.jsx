@@ -18,6 +18,7 @@ function App() {
       <MySkill />
       <AboutMe />
       <Project />
+      <Testimonial />
     </>
   );
 }
