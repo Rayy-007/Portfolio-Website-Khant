@@ -65,10 +65,8 @@ span {
   color: var(--primary-color);
 }
 
-h1,
-.title-small {
+h1 {
   font-size: var(--title-font-size);
-  font-weight: 700;
   line-height: 120%;
 }
 
@@ -76,6 +74,7 @@ h1,
   /* 20.00px → 54.00px */
   font-size: clamp(1.25rem, 0.5109rem + 3.6957vw, 3.375rem);
   color: var(--heading-color);
+  font-weight: 700;
   line-height: 100%;
 }
 
@@ -129,7 +128,7 @@ p.extra-small {
   text-align: center;
   cursor: pointer;
   padding: 0.7em 0.9em;
-  z-index: 3; /* If I don't give that th Button will not appear */
+  z-index: 3; /* If I don't give that the Button will not appear */
   transition: var(--smooth-move);
 }
 
@@ -146,7 +145,7 @@ p.extra-small {
   content: "";
   inset: 0;
 
-  border-radius: 4px; /* Want to get the perfect the Radius with Button */
+  border-radius: 4px; /* Want to get the perfect Radius with Button */
 
   background-color: var(--primary-color);
   height: 100%;
