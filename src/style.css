@@ -166,7 +166,6 @@ p.extra-small {
 /* =================
     Outline Button 
     ================ */
-
 .btn-outline {
   background-color: transparent;
   color: var(--primary-color);
@@ -199,7 +198,6 @@ p.extra-small {
 /* ===========================
     Section Padding And Margin 
     ===========================*/
-
 .container {
   width: min(90%, 1400px);
   margin-inline: auto;
@@ -217,6 +215,9 @@ p.extra-small {
   padding: 50px 0px;
 }
 
+/* =============
+    Responsive 
+    ============ */
 @media screen and (max-width: 990px) {
   .section-padding-1 {
     padding: 60px 0px;
