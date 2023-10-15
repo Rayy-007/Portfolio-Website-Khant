@@ -19,6 +19,7 @@ function App() {
       <AboutMe />
       <Project />
       <Testimonial />
+      <Contact />
     </>
   );
 }
