@@ -1,9 +1,9 @@
 /* =========== Font Roboto ========= */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-/* =======================================
+/* ===================================
     Css Variable For Color, Font Size
-    =======================================*/
+    ================================== */
 :root {
   --bg-color: #f5fcff;
   --primary-color: #5e3bee;

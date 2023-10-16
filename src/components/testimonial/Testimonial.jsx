@@ -4,6 +4,7 @@ import person1 from "../../assets/person-1.png";
 import stars from "../../assets/stars.png";
 
 function Testtmonial() {
+  // Testimonials Data of User
   const testimonialsData = [
     {
       feedback:
@@ -28,6 +29,7 @@ function Testtmonial() {
     },
   ];
 
+  // Creating testimonial cards
   const testimonialsCard = testimonialsData.map((data, index) => (
     <div key={index} className="card">
       <img className="stars" src={stars} alt="Stars" />

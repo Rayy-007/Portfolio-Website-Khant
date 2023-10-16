@@ -5,6 +5,7 @@ import project1 from "../../assets/project-1.png";
 import arrow from "../../assets/arrow.png";
 
 function Project() {
+  // Projects Data for Projects Card
   const projectsData = [
     {
       title: "React Quizzical App",
@@ -29,6 +30,7 @@ function Project() {
     },
   ];
 
+  // Creating the Projects Card
   const projectsCard = projectsData.map((data, index) => (
     <div key={index} className="project-card">
       <img src={data.image} alt="React Project Image" />

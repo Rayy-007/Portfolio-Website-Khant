@@ -5,13 +5,15 @@ import "./navbar.css";
 import logo from "../../assets/logo1.png";
 
 function Navbar() {
-  const [open, setOpen] = React.useState(false);
-  const [active, setActive] = React.useState("#Home");
+  const [open, setOpen] = React.useState(false); // For Mobile Navbar is open or not
+  const [active, setActive] = React.useState("#Home"); // For determing the active the Navbar Link
 
+  // Opened Navbar Sytling
   const styles = {
     transform: open && `translateX(0%)`,
   };
 
+  //  Navbar Links Name
   const navLinksName = [
     "Home",
     "Skills",
@@ -20,6 +22,7 @@ function Navbar() {
     "Testimonials",
   ];
 
+  // Creating Dynamic Active Nabar Links
   const navLinks = navLinksName.map((link) => (
     <li key={link}>
       <a

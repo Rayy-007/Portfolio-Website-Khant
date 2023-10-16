@@ -1,3 +1,6 @@
+/* =======================================
+    Porjects Or Profilio Section Styling
+   ======================================= */
 .projects {
   display: flex;
   flex-direction: column;
@@ -49,7 +52,6 @@
 /* =================
     Projects Card 
     =============== */
-
 .projects-con {
   display: flex;
   gap: calc(1vw + 1rem);
@@ -102,6 +104,9 @@
   height: 16px;
 }
 
+/* ====================
+    Responsive Section
+    =================== */
 @media screen and (max-width: 890px) {
   .projects-con .project-card:last-child {
     max-width: 350px;

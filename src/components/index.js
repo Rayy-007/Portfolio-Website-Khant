@@ -1,3 +1,5 @@
+// ? If we do that, we can easily import the components from this index file when we need
+
 import Navbar from "./Navbar/Navbar";
 import Header from "./header/Header";
 import MySkill from "./skill/MySkill";

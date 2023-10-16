@@ -1,3 +1,6 @@
+/* ===============================
+    Hader or Hero Section Styling
+    ============================== */
 .header {
   background-color: var(--bg-color);
 }
@@ -33,6 +36,9 @@
   width: min(658px, 100%);
 }
 
+/* ====================
+    Responsive Section
+    =================== */
 @media screen and (max-width: 950px) {
   .header-container {
     flex-direction: column;

@@ -6,6 +6,7 @@ import strategy from "../../assets/strategy.png";
 import reactJS from "../../assets/react-logo.png";
 
 function MySkill() {
+  // Data for Skills Card
   const skillsData = [
     {
       skill: "Front End Development",
@@ -33,6 +34,7 @@ function MySkill() {
     },
   ];
 
+  // Creating Cards with skills data
   const skillCards = skillsData.map((data, index) => (
     <div key={index} className="skill-card">
       <div className="img">
