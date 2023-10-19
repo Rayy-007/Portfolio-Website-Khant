@@ -68,10 +68,17 @@
 .contact .form .field select {
   width: 100%;
   padding: 16px;
+  font-size: var(--basic-font-size);
 
   border: 1.33px solid var(--primary-color);
   border-radius: 8px;
   background-color: var(--white-color);
+}
+
+.contact .form .field textarea {
+  min-height: 240px;
+  resize: none;
+  font-size: 20px;
 }
 
 .contact .form .field select option {
@@ -84,6 +91,7 @@
   padding: 18px 42px;
   border-radius: 8px;
   cursor: pointer;
+  font-size: var(--basic-font-size);
 }
 
 @media screen and (max-width: 960px) {

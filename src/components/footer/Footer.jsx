@@ -1,10 +1,11 @@
 import React from "react";
 import "./footer.css";
+import logo from "../../assets/logo1.png";
 
 function Footer() {
   const [active, setActive] = React.useState("#Home"); // For determing the active the Navbar Link
 
-  //  Navbar Links Name
+  // Navbar Links Name
   const navLinksName = [
     "Home",
     "Skills",
@@ -89,6 +90,8 @@ function Footer() {
             </svg>
           </div>
         </div>
+
+        <div className="line"></div>
 
         <div className="below-footer">
           <p>Made with ❤ by Khant</p>

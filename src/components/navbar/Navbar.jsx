@@ -48,7 +48,9 @@ function Navbar() {
         </ul>
 
         <div className="cta">
-          <a className="btn btn-outline">Contact Me</a>
+          <a href="#Contact" className="btn btn-outline">
+            Contact Me
+          </a>
         </div>
 
         {/* Mobile Close and Menu */}

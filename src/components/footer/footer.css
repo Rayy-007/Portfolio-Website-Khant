@@ -1,0 +1,84 @@
+/* ================
+    Footer Styling
+    =============== */
+.footer {
+  background-color: var(--bg-color);
+}
+
+.footer-con {
+  display: flex;
+  flex-direction: column;
+  gap: calc(2vw + 1.2em);
+}
+
+/* ----------------------
+    Footer Above Styling
+    -------------------- */
+.above-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.above-footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.above-footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.above-footer .links li {
+  padding: 0 15px;
+}
+
+.above-footer .links li a {
+  font-size: var(--extra-samll-font-size);
+}
+
+/* ----------------------
+    Social Media Styling
+    --------------------- */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(1.2vw + 0.2rem);
+}
+
+.social svg {
+  height: 33px;
+  cursor: pointer;
+}
+
+/* -----------------------
+    Below Footer Styling
+    --------------------- */
+.below-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.below-footer p,
+.below-footer .links a {
+  color: var(--heading-color);
+  font-size: var(--extra-samll-font-size);
+}
+
+.below-footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8em;
+}
+
+.line {
+  background-color: rgba(40, 41, 56, 0.55);
+  height: 2.33px;
+  width: 100%;
+}

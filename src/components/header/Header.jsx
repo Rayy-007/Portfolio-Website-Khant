@@ -20,7 +20,7 @@ function Header() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
             magnam.
           </p>
-          <a className="btn btn-primary" href="#">
+          <a className="btn btn-primary" href="#Contact">
             Get In Touch
           </a>
         </div>
