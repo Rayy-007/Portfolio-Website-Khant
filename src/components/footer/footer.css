@@ -9,11 +9,12 @@
   display: flex;
   flex-direction: column;
   gap: calc(2vw + 1.2em);
+  flex-wrap: wrap;
 }
 
 /* ----------------------
-    Footer Above Styling
-    -------------------- */
+Footer Above Styling
+-------------------- */
 .above-footer {
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .above-footer .links li {
@@ -62,6 +64,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .below-footer p,
@@ -75,10 +78,36 @@
   justify-content: center;
   align-items: center;
   gap: 1.8em;
+  flex-wrap: wrap;
 }
 
 .line {
   background-color: rgba(40, 41, 56, 0.55);
-  height: 2.33px;
+  height: 1.33px;
   width: 100%;
+}
+
+/* ====================
+    Responsive Section
+    =================== */
+@media screen and (max-width: 960px) {
+  .above-footer .links {
+    gap: calc(2vw + 0.3rem);
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .above-footer {
+    flex-direction: column;
+    gap: calc(2vw + 1rem);
+  }
+
+  .above-footer .links {
+    flex-direction: column;
+  }
+
+  .below-footer {
+    flex-direction: column-reverse;
+    gap: calc(2vw + 1rem);
+  }
 }
