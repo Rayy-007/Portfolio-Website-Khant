@@ -11,6 +11,7 @@ function Contact() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>
       </div>
+
       <div className="form">
         <div className="field">
           <label className="extra-small" htmlFor="first-name">
@@ -18,24 +19,28 @@ function Contact() {
           </label>
           <input type="text" id="first-name" />
         </div>
+
         <div className="field">
           <label className="extra-small" htmlFor="last-name">
             Last Name
           </label>
           <input type="text" id="last-name" />
         </div>
+
         <div className="field">
           <label className="extra-small" htmlFor="email">
             Email
           </label>
           <input type="text" id="email" />
         </div>
+
         <div className="field">
           <label className="extra-small" htmlFor="ph-number">
             Phone Number
           </label>
           <input type="text" id="ph-number" />
         </div>
+
         <div className="field">
           <label className="extra-small" htmlFor="topic">
             Choose a topic
@@ -44,18 +49,21 @@ function Contact() {
             <option value="">Select One..</option>
           </select>
         </div>
+
         <div className="field">
           <label className="extra-small" htmlFor="message">
             Message
           </label>
           <textarea id="message" placeholder="Type your message..."></textarea>
         </div>
+
         <div className="field accept">
           <input type="checkbox" id="accept" />
           <label className="extra-small" htmlFor="accept">
             I accept the terms
           </label>
         </div>
+
         <input type="submit" value="Submit" />
       </div>
     </div>

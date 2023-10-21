@@ -33,7 +33,9 @@ function Testtmonial() {
   const testimonialsCard = testimonialsData.map((data, index) => (
     <div key={index} className="card">
       <img className="stars" src={stars} alt="Stars" />
+
       <p className="extra-small">{data.feedback}</p>
+
       <div className="customer">
         <img src={data.image} alt="User" />
         <div className="customer-info">
@@ -51,6 +53,7 @@ function Testtmonial() {
           <h4>Client Feedback</h4>
           <h2>Customer testimonials</h2>
         </div>
+
         <div className="cards">{testimonialsCard}</div>
       </div>
     </div>

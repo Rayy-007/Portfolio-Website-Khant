@@ -8,9 +8,11 @@ function AboutMe() {
       <div className="about__img">
         <img src={aboutMe} alt="Photo of Me" />
       </div>
+
       <div className="about__content">
         <h4>About</h4>
         <h2>About Me</h2>
+
         <div className="description">
           <p>
             Hi there! I'm Min Khant, a 21-years-old software engineer from
