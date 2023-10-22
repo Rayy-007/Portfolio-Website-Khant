@@ -15,6 +15,7 @@
 
   /* Font size: 16.00px → 21.00px */
   --basic-font-size: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
+
   /* 28.00px → 64.00px */
   --title-font-size: clamp(1.75rem, 0.9674rem + 3.913vw, 4rem);
 
@@ -23,6 +24,9 @@
 
   /* Transition Effect */
   --smooth-move: 0.3s ease-in-out;
+
+  /* Section Flex Gap */
+  --gap: calc(3vw + 1rem);
 }
 
 /* =================== 
@@ -36,22 +40,16 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--white-color);
   color: var(--text-color);
   overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 /* ================== 
@@ -62,6 +60,7 @@ h2,
 h3,
 h4 {
   color: var(--heading-color);
+  font-weight: 700;
 }
 
 span {
@@ -77,21 +76,18 @@ h1 {
   /* 20.00px → 54.00px */
   font-size: clamp(1.25rem, 0.5109rem + 3.6957vw, 3.375rem);
   color: var(--heading-color);
-  font-weight: 700;
   line-height: 100%;
 }
 
 h2 {
   /* 24.00px → 45.00px */
   font-size: clamp(1.5rem, 1.0435rem + 2.2826vw, 2.8125rem);
-  font-weight: 700;
   line-height: 120%;
 }
 
 h3 {
   /* 20.00px → 32.00px */
   font-size: clamp(1.25rem, 0.8891rem + 1.2vw, 1.8rem);
-  font-weight: 700;
   line-height: 140%;
 }
 
@@ -99,6 +95,7 @@ h4 {
   font-size: var(--basic-font-size);
   font-weight: 500;
   line-height: 150%;
+  margin-bottom: 0.2em;
 }
 
 p,
@@ -123,16 +120,17 @@ p.extra-small {
     Button Styling
     ============== */
 .btn {
-  border: 1px solid var(--primary-color);
-  border-radius: 5.33px;
   font-size: var(--basic-font-size);
   font-weight: 400;
   line-height: 150%;
   text-align: center;
-  cursor: pointer;
   padding: 0.7em 0.9em;
-  z-index: 3; /* If I don't give that the Button will not appear */
+
+  border: 1px solid var(--primary-color);
+  border-radius: 5.33px;
   transition: var(--smooth-move);
+  cursor: pointer;
+  z-index: 3; /* If I don't give that the Button will not appear */
 }
 
 /* ================
@@ -198,6 +196,23 @@ p.extra-small {
   color: var(--white-color);
 }
 
+/* ===================
+    Flex Box Styling 
+    ================== */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===========================
     Section Padding And Margin 
     ===========================*/
@@ -232,5 +247,15 @@ p.extra-small {
 
   .section-padding-3 {
     padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section-padding-1 {
+    padding: 40px 0px;
+  }
+
+  .section-padding-2 {
+    padding: 50px 0px;
   }
 }

@@ -31,12 +31,12 @@ function Testtmonial() {
 
   // Creating testimonial cards
   const testimonialsCard = testimonialsData.map((data, index) => (
-    <div key={index} className="card">
+    <div key={index} className="card flex-col">
       <img className="stars" src={stars} alt="Stars" />
 
       <p className="extra-small">{data.feedback}</p>
 
-      <div className="customer">
+      <div className="customer flex-row">
         <img src={data.image} alt="User" />
         <div className="customer-info">
           <h4>{data.name}</h4>
@@ -48,13 +48,13 @@ function Testtmonial() {
 
   return (
     <div id="Testimonials" className="testimonial">
-      <div className=" testimonial-container container section-padding-2">
+      <div className=" testimonial-container flex-col container section-padding-2">
         <div className="title">
           <h4>Client Feedback</h4>
           <h2>Customer testimonials</h2>
         </div>
 
-        <div className="cards">{testimonialsCard}</div>
+        <div className="cards flex-row">{testimonialsCard}</div>
       </div>
     </div>
   );

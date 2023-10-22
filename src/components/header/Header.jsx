@@ -5,8 +5,8 @@ import ImageMe from "../../assets/Me-1.png";
 function Header() {
   return (
     <div id="Home" className="header section-padding-1">
-      <div className="container  header-container">
-        <div className="header-left">
+      <div className="container  header-container flex-row">
+        <div className="header-left flex-col">
           <h4>Hey, I am Min Khant</h4>
           <h1>
             <span>

@@ -37,13 +37,13 @@ function Navbar() {
 
   return (
     <div className="nav-con">
-      <div className="navbar container">
-        <a className="logo" href="#home">
+      <div className="navbar flex-row container">
+        <a className="logo flex-row" href="#home">
           <img src={logo} alt="Logo" />
           <h4>Khant</h4>
         </a>
 
-        <ul style={styles} className="links">
+        <ul style={styles} className="links flex-row">
           {navLinks}
         </ul>
 

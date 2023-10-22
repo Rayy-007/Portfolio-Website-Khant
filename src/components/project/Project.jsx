@@ -37,7 +37,7 @@ function Project() {
       <div className="content">
         <h3>{data.title}</h3>
         <p className="extra-small">{data.description}</p>
-        <a href={data.url}>
+        <a href={data.url} className="flex-row">
           View in Githu <img src={arrow} alt="Arrow" />
         </a>
       </div>
@@ -46,14 +46,14 @@ function Project() {
 
   return (
     <div id="Projects" className="projects container section-padding-2">
-      <div className="top">
-        <div className="title">
+      <div className="top flex-row">
+        <div className="title flex-col">
           <h4>Recent Projects</h4>
           <h2>My Projects</h2>
         </div>
 
         <a
-          className="git_btn btn-primary"
+          className="flex-row git_btn btn-primary"
           href="https://github.com/Rayy-007"
           target="blank"
         >

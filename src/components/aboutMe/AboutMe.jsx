@@ -4,8 +4,8 @@ import aboutMe from "../../assets/about-me.png";
 
 function AboutMe() {
   return (
-    <div id="AboutMe" className="about container section-padding-1">
-      <div className="about__img">
+    <div id="AboutMe" className="about flex-row container section-padding-1">
+      <div className="about__img flex-row">
         <img src={aboutMe} alt="Photo of Me" />
       </div>
 

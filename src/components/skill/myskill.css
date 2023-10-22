@@ -1,52 +1,42 @@
 /* ======================= 
    Skills Section Styling 
    =======================*/
-.myskill {
-  display: flex;
-  flex-direction: column;
+.myskill,
+.myskill .title {
   justify-content: space-between;
-  gap: calc(3vw + 1rem);
+  align-items: flex-start;
 }
 
-.myskill .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.myskill {
+  gap: var(--gap);
 }
 
 .skills-con {
-  display: flex;
-  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: calc(2vw + 0.3rem);
 }
 
 .skill-card {
   flex: 1;
-  background-color: var(--bg-color);
-  border-radius: 10px;
   flex-basis: 240px;
 
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 1.5em;
   gap: 1em;
 
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 1.5em;
   box-shadow: 0px 3px var(--primary-color);
 }
 
 .skill-card .img {
-  background-color: var(--white-color);
   align-self: flex-start;
+  background-color: var(--white-color);
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
-
-  /* Want to Perfectly Center */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .skill-card img {

@@ -2,17 +2,11 @@
     Contact Section Styling
    ======================== */
 .contact {
-  display: flex;
-  flex-direction: column;
   gap: 2em;
 }
 
 .contact .title {
   text-align: center;
-}
-
-.contact .title h4 {
-  margin-bottom: 0.2em;
 }
 
 .contact .title h2 {
@@ -25,6 +19,7 @@
 .contact .form {
   width: 60%;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
@@ -87,8 +82,8 @@
 .contact .form input[type="Submit"] {
   background-color: var(--primary-color);
   color: var(--white-color);
-  padding: 18px 42px;
-  border-radius: 8px;
+  padding: 0.7em 1.6em;
+  border-radius: 5.33px;
   cursor: pointer;
   font-size: var(--basic-font-size);
 }

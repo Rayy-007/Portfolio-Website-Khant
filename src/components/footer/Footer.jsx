@@ -31,13 +31,13 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-con container section-padding-3">
-        <div className="above-footer">
-          <a className="logo" href="#home">
+        <div className="above-footer flex-row">
+          <a className="logo flex-row" href="#home">
             <img src={logo} alt="Logo" />
             <h4>Khant</h4>
           </a>
-          <ul className="links">{navLinks}</ul>
-          <div className="social">
+          <ul className="links flex-row">{navLinks}</ul>
+          <div className="social flex-row">
             {/* Facebook */}
             <svg
               className="facebook"
@@ -93,9 +93,9 @@ function Footer() {
 
         <div className="line"></div>
 
-        <div className="below-footer">
+        <div className="below-footer flex-row">
           <p>Made with ❤ by Khant</p>
-          <div className="links">
+          <div className="links flex-row">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
             <a href="#">Cookies Settings</a>

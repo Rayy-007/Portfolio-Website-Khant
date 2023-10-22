@@ -36,8 +36,8 @@ function MySkill() {
 
   // Creating Cards with skills data
   const skillCards = skillsData.map((data, index) => (
-    <div key={index} className="skill-card">
-      <div className="img">
+    <div key={index} className="skill-card flex-col">
+      <div className="img flex-row">
         <img src={data.image} alt="skills" />
       </div>
       <h3>{data.skill}</h3>
@@ -46,13 +46,13 @@ function MySkill() {
   ));
 
   return (
-    <div id="Skills" className="myskill container section-padding-2">
-      <div className="title">
+    <div id="Skills" className="myskill flex-col container section-padding-2">
+      <div className="title flex-col">
         <h4>My Skills</h4>
         <h2>My Expertises</h2>
       </div>
 
-      <div className="skills-con">{skillCards}</div>
+      <div className="skills-con flex-row">{skillCards}</div>
     </div>
   );
 }
