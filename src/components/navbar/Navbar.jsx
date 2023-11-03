@@ -2,7 +2,7 @@ import React from "react";
 import { ImCross } from "react-icons/im";
 import { TiThMenuOutline } from "react-icons/ti";
 import "./navbar.css";
-import logo from "../../assets/logo1.png";
+import { logo1 } from "../Image";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false); // For Mobile Navbar is open or not
@@ -39,7 +39,7 @@ function Navbar() {
     <div className="nav-con">
       <div className="navbar flex-row container">
         <a className="logo flex-row" href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={logo1} alt="Logo" />
           <h4>Khant</h4>
         </a>
 

@@ -1,9 +1,7 @@
 import React from "react";
 import "./myskill.css";
-import frontEnd from "../../assets/front-dev.png";
-import uiUX from "../../assets/ui-ux.png";
-import strategy from "../../assets/strategy.png";
-import reactJS from "../../assets/react-logo.png";
+
+import { uiUX, strategy, reactLogo, frontDev } from "../Image";
 
 function MySkill() {
   // Data for Skills Card
@@ -12,7 +10,7 @@ function MySkill() {
       skill: "Front End Development",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
-      image: frontEnd,
+      image: frontDev,
     },
     {
       skill: "UI & UX Design",
@@ -24,7 +22,7 @@ function MySkill() {
       skill: "React JS Development",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
-      image: reactJS,
+      image: reactLogo,
     },
     {
       skill: "Strategy & Direction",

@@ -1,7 +1,7 @@
 import React from "react";
 import "./testimonial.css";
-import person1 from "../../assets/person-1.png";
-import stars from "../../assets/stars.png";
+
+import { stars, person1 } from "../Image";
 
 function Testtmonial() {
   // Testimonials Data of User

@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import ImageMe from "../../assets/Me-1.png";
+import { Me } from "../Image";
 
 function Header() {
   return (
@@ -28,7 +28,7 @@ function Header() {
         </div>
 
         <div className="header-right">
-          <img src={ImageMe} alt="Photo of Me" />
+          <img src={Me} alt="Photo of Me" />
         </div>
       </div>
     </div>

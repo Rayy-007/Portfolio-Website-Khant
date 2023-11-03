@@ -1,8 +1,7 @@
 import React from "react";
 import "./project.css";
-import gitHubLogo from "../../assets/github.png";
-import project1 from "../../assets/project-1.png";
-import arrow from "../../assets/arrow.png";
+
+import { github, project, arrow } from "../Image";
 
 function Project() {
   // Projects Data for Projects Card
@@ -12,21 +11,21 @@ function Project() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project1,
+      image: project,
     },
     {
       title: "React Quizzical App",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project1,
+      image: project,
     },
     {
       title: "React Quizzical App",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project1,
+      image: project,
     },
   ];
 
@@ -57,7 +56,7 @@ function Project() {
           href="https://github.com/Rayy-007"
           target="blank"
         >
-          <img src={gitHubLogo} alt="Git Hub Logo" />
+          <img src={github} alt="Git Hub Logo" />
           <p className="extra-small"> Visit My GitHub</p>
         </a>
       </div>
