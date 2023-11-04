@@ -1,7 +1,7 @@
 import React from "react";
 import "./testimonial.css";
 
-import { stars, person1 } from "../Image";
+import { stars, person1, person2, person3 } from "../Image";
 
 function Testtmonial() {
   // Testimonials Data of User
@@ -18,14 +18,14 @@ function Testtmonial() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       name: "Dianne Russell",
       job: "Starbucks",
-      image: person1,
+      image: person2,
     },
     {
       feedback:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
       name: "Dianne Russell",
       job: "Starbucks",
-      image: person1,
+      image: person3,
     },
   ];
 

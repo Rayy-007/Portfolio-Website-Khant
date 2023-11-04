@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
 
-import { github, project, arrow } from "../Image";
+import { github, project1, project2, project3, arrow } from "../Image";
 
 function Project() {
   // Projects Data for Projects Card
@@ -11,21 +11,21 @@ function Project() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project,
+      image: project1,
     },
     {
       title: "React Quizzical App",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project,
+      image: project2,
     },
     {
       title: "React Quizzical App",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-      image: project,
+      image: project3,
     },
   ];
 
