@@ -27,6 +27,34 @@ function Project() {
       url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
       image: project3,
     },
+    {
+      title: "React Quizzical App",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+      image: project2,
+    },
+    {
+      title: "React Quizzical App",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+      image: project3,
+    },
+    {
+      title: "React Quizzical App",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+      image: project2,
+    },
+    {
+      title: "React Quizzical App",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      url: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+      image: project3,
+    },
   ];
 
   // Creating the Projects Card
@@ -37,7 +65,7 @@ function Project() {
         <h3>{data.title}</h3>
         <p className="extra-small">{data.description}</p>
         <a href={data.url} className="flex-row">
-          View in Githu <img src={arrow} alt="Arrow" />
+          View in GitHub <img src={arrow} alt="Arrow" />
         </a>
       </div>
     </div>

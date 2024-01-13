@@ -5,7 +5,28 @@ import { uiUX, strategy, reactLogo, frontDev } from "../Image";
 
 function MySkill() {
   // Data for Skills Card
-  const skillsData = [
+  const developerSkills = [
+    {
+      skill: "Full Stack Development",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
+      image: frontDev,
+    },
+    {
+      skill: "Front End Development",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
+      image: frontDev,
+    },
+    {
+      skill: "UI & UX Design",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
+      image: uiUX,
+    },
+  ];
+
+  const frontendSkills = [
     {
       skill: "Front End Development",
       description:
@@ -33,7 +54,16 @@ function MySkill() {
   ];
 
   // Creating Cards with skills data
-  const skillCards = skillsData.map((data, index) => (
+  const developerSkillsCards = developerSkills.map((data, index) => (
+    <div key={index} className="skill-card flex-col">
+      <div className="img flex-row">
+        <img src={data.image} alt="skills" />
+      </div>
+      <h3>{data.skill}</h3>
+      <p className="extra-small">{data.description}</p>
+    </div>
+  ));
+  const fronendSkillsCards = frontendSkills.map((data, index) => (
     <div key={index} className="skill-card flex-col">
       <div className="img flex-row">
         <img src={data.image} alt="skills" />
@@ -50,7 +80,8 @@ function MySkill() {
         <h2>My Expertises</h2>
       </div>
 
-      <div className="skills-con flex-row">{skillCards}</div>
+      <div className="skills-con flex-row">{developerSkillsCards}</div>
+      <div className="skills-con flex-row">{fronendSkillsCards}</div>
     </div>
   );
 }
