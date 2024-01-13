@@ -47,7 +47,8 @@
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: var(--heading-color);
+  /* background-color: var(--white-color); */
   color: var(--text-color);
   overflow-x: hidden;
 }
