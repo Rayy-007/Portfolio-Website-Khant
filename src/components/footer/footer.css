@@ -43,6 +43,7 @@
 }
 
 .social svg {
+  width: 33px;
   height: 33px;
   cursor: pointer;
 }
@@ -56,7 +57,7 @@
 }
 
 .below-footer p,
-.below-footer .links a {
+.below-footer .links p {
   color: var(--heading-color);
   font-size: var(--extra-samll-font-size);
 }
