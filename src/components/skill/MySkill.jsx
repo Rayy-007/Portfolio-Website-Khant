@@ -2,6 +2,7 @@ import React from "react";
 import "./myskill.css";
 
 import { uiUX, strategy, reactLogo, frontDev } from "../Image";
+import NextJS from "../../assets/skills/nextjs.png";
 
 function MySkill() {
   // Data for Skills Card
@@ -31,7 +32,7 @@ function MySkill() {
       skill: "Front End Development",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,ea adipisicing elit. Reprehenderit,ea!",
-      image: frontDev,
+      image: NextJS,
     },
     {
       skill: "UI & UX Design",
