@@ -35,6 +35,13 @@ import figma from "../assets/skills/figma.png";
 import prototype from "../assets/skills/prototype.png";
 import wireframe from "../assets/skills/wireframe.png";
 
+// Projects
+import quizzical from "../assets/projects/quizzical.png";
+import dobu from "../assets/projects/dobu.png";
+import dashboard from "../assets/projects/dashboard.png";
+import ecommerce from "../assets/projects/ecommerce.png";
+import charity from "../assets/projects/charity.png";
+
 export {
   aboutMe,
   arrow,
@@ -67,4 +74,9 @@ export {
   figma,
   prototype,
   wireframe,
+  charity,
+  dashboard,
+  dobu,
+  ecommerce,
+  quizzical,
 };

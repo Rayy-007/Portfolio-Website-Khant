@@ -20,7 +20,7 @@
   --title-font-size: clamp(1.75rem, 0.9674rem + 3.913vw, 4rem);
 
   /* 14.00px → 18.00px */
-  --extra-samll-font-size: clamp(0.875rem, 0.788rem + 0.4348vw, 1.125rem);
+  --extra-samll-font-size: clamp(0.875rem, 0.788rem + 0.4348vw, 1.025rem);
 
   /* Transition Effect */
   --smooth-move: 0.3s ease-in-out;
@@ -87,7 +87,7 @@ h2 {
 
 h3 {
   /* 20.00px → 32.00px */
-  font-size: clamp(1.25rem, 0.8891rem + 1.2vw, 1.8rem);
+  font-size: clamp(1.05rem, 0.6891rem + 1.2vw, 1.6rem);
   line-height: 140%;
 }
 

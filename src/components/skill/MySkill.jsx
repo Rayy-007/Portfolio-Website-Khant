@@ -141,8 +141,8 @@ function MySkill() {
         <img src={data.image} alt="skills" />
       </div>
       <h4>{data.skill}</h4>
-      <div class="progress-container">
-        <div class="progress-bar" style={{ width: data.level }}></div>
+      <div className="progress-container">
+        <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
       </div>
     </div>
@@ -154,8 +154,8 @@ function MySkill() {
         <img src={data.image} alt="skills" />
       </div>
       <h4>{data.skill}</h4>
-      <div class="progress-container">
-        <div class="progress-bar" style={{ width: data.level }}></div>
+      <div className="progress-container">
+        <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
       </div>
     </div>
@@ -167,8 +167,8 @@ function MySkill() {
         <img src={data.image} alt="skills" />
       </div>
       <h4>{data.skill}</h4>
-      <div class="progress-container">
-        <div class="progress-bar" style={{ width: data.level }}></div>
+      <div className="progress-container">
+        <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
       </div>
     </div>
