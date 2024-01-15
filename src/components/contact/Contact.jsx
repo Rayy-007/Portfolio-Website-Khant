@@ -18,7 +18,7 @@ function Contact() {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="/.netlify/email/sendEmail"
+        action="/.netlify/functions/sendEmail"
         className="form"
       >
         <div className="field">
