@@ -12,6 +12,10 @@
 .contact .title h2 {
   margin-bottom: 0.5em;
 }
+.contact .title p {
+  margin: 0 auto;
+  width: 50%;
+}
 
 /* ======================
     Contact form Styling
@@ -82,8 +86,36 @@
   font-size: 20px;
 }
 
+.contact .form .field select {
+  cursor: pointer;
+  width: 100%;
+}
+
+.select-input {
+  position: relative;
+  width: 100%;
+}
+
+.select-input::before {
+  position: absolute;
+  content: "▼";
+  right: 25px;
+  top: 19px;
+  font-size: 18px;
+  color: black;
+  transition: transform 0.3s;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
 .contact .form .field select option {
   width: 100%;
+  font-size: 17px;
 }
 
 .contact .form input[type="Submit"] {
