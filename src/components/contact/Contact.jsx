@@ -5,67 +5,70 @@ function Contact() {
   return (
     <div id="Contact" className="contact flex-col container section-padding-2">
       <div className="title">
-        <h4>Get In Touch</h4>
+        <h4>Feel free to reach out by sending an email.</h4>
         <h2>Contact me</h2>
         <p className="extra-small">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+          Interested in hiring me or collaborating on a project? I look forward
+          to hearing from you!
         </p>
       </div>
 
-      <div className="form">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/.netlify/email/sendEmail"
+        className="form"
+      >
         <div className="field">
           <label className="extra-small" htmlFor="first-name">
             First Name
           </label>
-          <input type="text" id="first-name" />
+          <input required type="text" id="first-name" name="name" />
         </div>
 
         <div className="field">
           <label className="extra-small" htmlFor="last-name">
-            Last Name
+            Last Name (Optional)
           </label>
-          <input type="text" id="last-name" />
+          <input type="text" id="last-name" name="last-name" />
         </div>
 
         <div className="field">
           <label className="extra-small" htmlFor="email">
             Email
           </label>
-          <input type="text" id="email" />
+          <input required type="email" id="email" name="email" />
         </div>
 
-        <div className="field">
-          <label className="extra-small" htmlFor="ph-number">
-            Phone Number
-          </label>
-          <input type="text" id="ph-number" />
-        </div>
-
-        <div className="field">
+        <div className="field ">
           <label className="extra-small" htmlFor="topic">
-            Choose a topic
+            Why would you like to contact me!
           </label>
-          <select id="topic">
-            <option value="">Select One..</option>
-          </select>
+          <div className="select-input">
+            <select id="topic" name="topic">
+              <option value="hire">Interested in hiring me</option>
+              <option value="collaborate">Collaborating on a project</option>
+              <option value="learn">Learn with me</option>
+            </select>
+          </div>
         </div>
 
         <div className="field">
           <label className="extra-small" htmlFor="message">
-            Message
+            What are your thoughts on my website? I'd love to hear your
+            feedback, whether it's positive or constructive.
           </label>
-          <textarea id="message" placeholder="Type your message..."></textarea>
+          <textarea
+            id="message"
+            placeholder="I value your opinion!"
+            name="message"
+          ></textarea>
         </div>
 
-        <div className="field accept">
-          <input type="checkbox" id="accept" />
-          <label className="extra-small" htmlFor="accept">
-            I accept the terms
-          </label>
-        </div>
-
-        <input type="submit" value="Submit" />
-      </div>
+        <input required type="submit" value="Send" />
+      </form>
     </div>
   );
 }
