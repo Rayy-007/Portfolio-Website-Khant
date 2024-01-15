@@ -15,8 +15,14 @@
   justify-content: space-between;
 }
 
-.navbar .logo {
-  gap: 8px;
+.logo {
+  gap: 10px;
+}
+.logo .logo-icon {
+  width: 60px;
+}
+.logo .logo-text {
+  width: 180px;
 }
 
 .navbar .links li {
@@ -71,7 +77,11 @@
 /* ======================
       Responsive Section
     ===================== */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1176px) {
+  .logo .logo-text {
+    display: none;
+  }
+
   .navbar .links li {
     padding: 0 15px;
   }
@@ -113,12 +123,6 @@
     right: 8vw;
     display: block;
     z-index: 99;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar .logo h4 {
-    display: none;
   }
 }
 

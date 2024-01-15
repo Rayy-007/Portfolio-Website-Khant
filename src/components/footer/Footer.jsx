@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { logo1 } from "../Image";
+import { KhantLogo, KhantLogoText } from "../Image";
 
 function Footer() {
   const [active, setActive] = React.useState("#Home"); // For determing the active the Navbar Link
@@ -33,8 +33,8 @@ function Footer() {
       <div className="footer-con container section-padding-3">
         <div className="above-footer flex-row">
           <a className="logo flex-row" href="#home">
-            <img src={logo1} alt="Logo" />
-            <h4>Khant</h4>
+            <img className="logo-icon" src={KhantLogo} alt="Logo" />
+            <img className="logo-text" src={KhantLogoText} alt="KhantLogo" />
           </a>
           <ul className="links flex-row">{navLinks}</ul>
           <div className="social flex-row">

@@ -1,7 +1,6 @@
 import aboutMe from "../assets/about-me.png";
 import arrow from "../assets/arrow.png";
 import github from "../assets/github.png";
-import logo1 from "../assets/logo1.png";
 import Me from "../assets/Me-1.png";
 import person1 from "../assets/person1.png";
 import person2 from "../assets/person2.png";
@@ -41,13 +40,15 @@ import dobu from "../assets/projects/dobu.png";
 import dashboard from "../assets/projects/dashboard.png";
 import ecommerce from "../assets/projects/ecommerce.png";
 import charity from "../assets/projects/charity.png";
+// Khan Rayy Logo
+import KhantLogo from "../assets/logo/khant-logo.png";
+import KhantLogoText from "../assets/logo/khant-logo-text.png";
 
 export {
   aboutMe,
   arrow,
   frontDev,
   github,
-  logo1,
   Me,
   person1,
   person2,
@@ -79,4 +80,6 @@ export {
   dobu,
   ecommerce,
   quizzical,
+  KhantLogo,
+  KhantLogoText,
 };
