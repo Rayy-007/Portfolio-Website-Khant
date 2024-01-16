@@ -21,6 +21,7 @@ import {
   wireframe,
   fullstack,
 } from "../Image";
+import ScrollAnimation from "../../ScrollAnimation";
 
 function MySkill() {
   // Data for Skills Card
@@ -128,19 +129,29 @@ function MySkill() {
   const developerSkillsCards = developerSkills.map((data, index) => (
     <div key={index} className="skill-card flex-col">
       <div className="img flex-row">
-        <img src={data.image} alt="skills" />
+        <ScrollAnimation>
+          <img src={data.image} alt="skills" />
+        </ScrollAnimation>
       </div>
-      <h3>{data.skill}</h3>
-      <p>{data.description}</p>
+      <ScrollAnimation>
+        <h3>{data.skill}</h3>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <p>{data.description}</p>
+      </ScrollAnimation>
     </div>
   ));
 
   const fronendSkillsCards = frontendSkills.map((data, index) => (
     <div key={index} className="skill-card  flex-col">
       <div className="img flex-row">
-        <img src={data.image} alt="skills" />
+        <ScrollAnimation>
+          <img src={data.image} alt="skills" />
+        </ScrollAnimation>
       </div>
-      <h4>{data.skill}</h4>
+      <ScrollAnimation>
+        <h4>{data.skill}</h4>
+      </ScrollAnimation>
       <div className="progress-container">
         <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
@@ -151,9 +162,13 @@ function MySkill() {
   const backendSkillsCards = backendSkills.map((data, index) => (
     <div key={index} className="skill-card  flex-col">
       <div className="img flex-row">
-        <img src={data.image} alt="skills" />
+        <ScrollAnimation>
+          <img src={data.image} alt="skills" />
+        </ScrollAnimation>
       </div>
-      <h4>{data.skill}</h4>
+      <ScrollAnimation>
+        <h4>{data.skill}</h4>
+      </ScrollAnimation>
       <div className="progress-container">
         <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
@@ -164,9 +179,13 @@ function MySkill() {
   const uiuxSkillsCards = uiuxSkills.map((data, index) => (
     <div key={index} className="skill-card  flex-col">
       <div className="img flex-row">
-        <img src={data.image} alt="skills" />
+        <ScrollAnimation>
+          <img src={data.image} alt="skills" />
+        </ScrollAnimation>
       </div>
-      <h4>{data.skill}</h4>
+      <ScrollAnimation>
+        <h4>{data.skill}</h4>
+      </ScrollAnimation>
       <div className="progress-container">
         <div className="progress-bar" style={{ width: data.level }}></div>
         <div className="tooltip">{data.level}</div>
@@ -178,21 +197,29 @@ function MySkill() {
     <>
       <div id="Skills" className="myskill flex-col container section-padding-2">
         <div className="title flex-col">
-          <h4>My Skills</h4>
-          <h2>My Expertises</h2>
+          <ScrollAnimation>
+            <h4>My Skills</h4>
+            <h2>My Expertises</h2>
+          </ScrollAnimation>
         </div>
 
         <div className="skills-con flex-row">{developerSkillsCards}</div>
         <div className="small">
-          <h4>Frontend Skills</h4>
+          <ScrollAnimation>
+            <h4>Frontend Skills</h4>
+          </ScrollAnimation>
           <div className="skills-con flex-row">{fronendSkillsCards}</div>
         </div>
         <div className="small">
-          <h4>UIUX Skills</h4>
+          <ScrollAnimation>
+            <h4>UIUX Skills</h4>
+          </ScrollAnimation>
           <div className="skills-con flex-row">{uiuxSkillsCards}</div>
         </div>
         <div className="small">
-          <h4>Backend Skills</h4>
+          <ScrollAnimation>
+            <h4>Backend Skills</h4>
+          </ScrollAnimation>
           <div className="skills-con flex-row">{backendSkillsCards}</div>
         </div>
       </div>

@@ -23,7 +23,7 @@
 }
 
 .about__content li {
-  list-style: disc;
+  /* list-style: disc; */
   padding-top: 1em;
 }
 

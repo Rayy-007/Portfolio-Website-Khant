@@ -1,13 +1,8 @@
 import React from "react";
 import "./project.css";
 
-import { useState, useEffect } from "react";
-
 import {
   github,
-  project1,
-  project2,
-  project3,
   arrow,
   charity,
   dashboard,
@@ -15,6 +10,7 @@ import {
   ecommerce,
   quizzical,
 } from "../Image";
+import ScrollAnimation from "../../ScrollAnimation";
 
 function Project() {
   // Projects Data for Projects Card
@@ -88,9 +84,14 @@ function Project() {
   const recentProjectsCard = projectsData.slice(0, 2).map((data, index) => (
     <div key={index} className=" recent project-card">
       <img src={data.image} alt="React Project Image" />
+
       <div className="content">
-        <h3>{data.title}</h3>
-        <p className="extra-small">{data.description}</p>
+        <ScrollAnimation>
+          <h3>{data.title}</h3>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <p className="extra-small">{data.description}</p>
+        </ScrollAnimation>
         <div className="view-con">
           <a href={data.codeUrl} target="_blank" className="view  flex-row">
             View Sourcecode <img src={arrow} alt="Arrow" />
@@ -107,8 +108,12 @@ function Project() {
     <div key={index} className="project-card">
       <img src={data.image} alt="React Project Image" />
       <div className="content">
-        <h3>{data.title}</h3>
-        <p className="extra-small">{data.description}</p>
+        <ScrollAnimation>
+          <h3>{data.title}</h3>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <p className="extra-small">{data.description}</p>
+        </ScrollAnimation>
         <div className="view-con">
           <a href={data.codeUrl} target="_blank" className="view  flex-row">
             View Sourcecode <img src={arrow} alt="Arrow" />
@@ -125,10 +130,11 @@ function Project() {
     <div id="Projects" className="projects container section-padding-2">
       <div className="top flex-row">
         <div className="title flex-col">
-          <h4>Recent Projects</h4>
-          <h2>My Projects</h2>
+          <ScrollAnimation>
+            <h4>Recent Projects</h4>
+            <h2>My Projects</h2>
+          </ScrollAnimation>
         </div>
-
         <a
           className="flex-row git_btn btn-primary"
           href="https://github.com/Rayy-007"
