@@ -13,6 +13,8 @@
   --heading-color: #282938;
   --white-color: #ffffff;
 
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+
   /* Font size: 16.00px → 21.00px */
   --basic-font-size: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
 
@@ -27,6 +29,14 @@
 
   /* Section Flex Gap */
   --gap: calc(3vw + 1rem);
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1625;
+  --text-color: #ba9ffb;
+  --heading-color: #fafafa;
+  --white-color: #121212;
+  --box-shadow-color: rgba(44, 32, 75, 0.801);
 }
 
 /* =================== 
@@ -47,9 +57,12 @@
 }
 
 body {
-  background-color: var(--white-color);
-  color: var(--text-color);
   overflow-x: hidden;
+  color: var(--text-color);
+}
+
+.normal-bg {
+  background-color: var(--white-color);
 }
 
 /* ================== 
@@ -134,11 +147,12 @@ p.extra-small {
 }
 
 /* ================
-    Primary Button
-    ================ */
+Primary Button
+================ */
 .btn-primary {
   color: var(--white-color);
   position: relative;
+  z-index: 3; /* If I don't give that the Button will not appear */
 }
 
 .btn-primary::before {
@@ -231,6 +245,52 @@ p.extra-small {
 
 .section-padding-3 {
   padding: 50px 0px;
+}
+
+/* =======================
+    Light and Dark Toggler
+    ====================== */
+.toggler {
+  opacity: 0;
+  position: absolute;
+}
+
+.toggler-label {
+  background-color: var(--heading-color);
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moon {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.sun {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.toggler-label .ball {
+  background-color: var(--bg-color);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.toggler:checked + .toggler-label .ball {
+  transform: translateX(24px);
 }
 
 /* =============

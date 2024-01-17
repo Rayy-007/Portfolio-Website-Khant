@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import { Me } from "../Image";
 
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function Header() {
   return (
