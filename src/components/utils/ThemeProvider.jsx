@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import { motion } from "framer-motion";
+import useLocalStorage from "use-local-storage";
 
 const ThemeContext = createContext();
 
@@ -8,7 +9,9 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  // const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // const color = preference ? "dark" : preference === null ? "dark" : "light";
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));

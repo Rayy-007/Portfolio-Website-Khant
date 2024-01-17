@@ -8,7 +8,7 @@ import { useTheme } from "../utils/ThemeProvider";
 function Navbar() {
   const [open, setOpen] = React.useState(false); // For Mobile Navbar is open or not
   const [active, setActive] = React.useState("#Home"); // For determing the active the Navbar Link
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   // Opened Navbar Sytling
   const styles = {
@@ -65,7 +65,14 @@ function Navbar() {
           <label htmlFor="checkbox" className="toggler-label">
             <b className="moon">🌕</b>
             <b className="sun">🌑</b>
-            <span className="ball"></span>
+            <span
+              className="ball"
+              style={
+                theme === "light"
+                  ? { transform: "translateX(0px)" }
+                  : { transform: "translateX(24px)" }
+              }
+            ></span>
           </label>
         </div>
 
