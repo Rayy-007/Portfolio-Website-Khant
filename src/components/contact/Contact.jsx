@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./contact.css";
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function Contact() {
   // Clean the form input

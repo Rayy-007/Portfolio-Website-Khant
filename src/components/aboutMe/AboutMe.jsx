@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutme.css";
 import { aboutMe } from "../Image";
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function AboutMe() {
   return (

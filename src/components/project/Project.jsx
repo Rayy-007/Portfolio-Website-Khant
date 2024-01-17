@@ -10,7 +10,7 @@ import {
   ecommerce,
   quizzical,
 } from "../Image";
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function Project() {
   // Projects Data for Projects Card
@@ -132,6 +132,8 @@ function Project() {
         <div className="title flex-col">
           <ScrollAnimation>
             <h4>Recent Projects</h4>
+          </ScrollAnimation>
+          <ScrollAnimation>
             <h2>My Projects</h2>
           </ScrollAnimation>
         </div>

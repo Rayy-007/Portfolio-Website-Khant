@@ -21,7 +21,7 @@ import {
   wireframe,
   fullstack,
 } from "../Image";
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function MySkill() {
   // Data for Skills Card

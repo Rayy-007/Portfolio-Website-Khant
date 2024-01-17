@@ -2,7 +2,7 @@ import React from "react";
 import "./testimonial.css";
 
 import { stars, person1, person2, person3 } from "../Image";
-import ScrollAnimation from "../../ScrollAnimation";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 function Testtmonial() {
   // Testimonials Data of User

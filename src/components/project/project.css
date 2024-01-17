@@ -22,7 +22,7 @@
   border-radius: 5px;
 }
 
-.projects .top .btn-primary::before {
+.projects .top a.btn-primary::before {
   background-color: var(--text-color);
 }
 

@@ -9,10 +9,12 @@ import {
   Contact,
   Footer,
 } from "./components/index";
+import { useTheme } from "./components/utils/ThemeProvider";
 
 function App() {
+  const { theme } = useTheme();
   return (
-    <>
+    <div data-theme={theme === "light" ? "light" : "dark"}>
       <Navbar />
       <Header />
       <MySkill />
@@ -21,7 +23,7 @@ function App() {
       <Testimonial />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
