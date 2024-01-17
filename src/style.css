@@ -13,6 +13,8 @@
   --heading-color: #282938;
   --white-color: #ffffff;
 
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+
   /* Font size: 16.00px → 21.00px */
   --basic-font-size: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
 
@@ -34,6 +36,7 @@
   --text-color: #ba9ffb;
   --heading-color: #fafafa;
   --white-color: #121212;
+  --box-shadow-color: rgba(44, 32, 75, 0.801);
 }
 
 /* =================== 
@@ -54,9 +57,12 @@
 }
 
 body {
-  color: var(--text-color);
-  background-color: var(--white-color);
   overflow-x: hidden;
+  color: var(--text-color);
+}
+
+.normal-bg {
+  background-color: var(--white-color);
 }
 
 /* ================== 
@@ -141,11 +147,12 @@ p.extra-small {
 }
 
 /* ================
-    Primary Button
-    ================ */
+Primary Button
+================ */
 .btn-primary {
   color: var(--white-color);
   position: relative;
+  z-index: 3; /* If I don't give that the Button will not appear */
 }
 
 .btn-primary::before {

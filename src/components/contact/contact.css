@@ -37,6 +37,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  color: var(--heading-color);
 }
 
 .contact .form .field:nth-child(5),
@@ -58,10 +59,6 @@
   justify-self: center;
 }
 
-/* ----------
-    CheckBox 
-    --------- */
-
 .contact .form .field input:not([type="checkbox"]),
 .contact .form .field textarea,
 .contact .form .field select {
@@ -73,6 +70,7 @@
   border-radius: 8px;
   background-color: var(--white-color);
   transition: var(--smooth-move);
+  color: var(--heading-color);
 }
 
 .contact .form .field input:focus,
@@ -103,7 +101,7 @@
   right: 25px;
   top: 19px;
   font-size: 18px;
-  color: black;
+  color: var(--heading-color);
   transition: transform 0.3s;
 }
 

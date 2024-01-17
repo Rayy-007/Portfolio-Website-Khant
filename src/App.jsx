@@ -17,11 +17,15 @@ function App() {
     <div data-theme={theme === "light" ? "light" : "dark"}>
       <Navbar />
       <Header />
-      <MySkill />
-      <AboutMe />
-      <Project />
+      <div className="normal-bg">
+        <MySkill />
+        <AboutMe />
+        <Project />
+      </div>
       <Testimonial />
-      <Contact />
+      <div className="normal-bg">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
