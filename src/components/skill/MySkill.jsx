@@ -2,11 +2,11 @@ import React from "react";
 import "./myskill.css";
 import {
   uiUX,
-  strategy,
   reactLogo,
   frontDev,
   nextjs,
   javascript,
+  typescript,
   tailwind,
   jquery,
   sass,
@@ -35,7 +35,7 @@ function MySkill() {
     {
       skill: "Front End Development",
       description:
-        "Proficient in front-end development 😎, I specialize in crafting engaging and responsive user interfaces.",
+        "Proficient in front-end development 🐱‍🏍, I specialize in crafting engaging and responsive user interfaces.",
       image: frontDev,
     },
     {
@@ -63,6 +63,11 @@ function MySkill() {
       level: "80%",
     },
     {
+      skill: "TypeScript",
+      image: typescript,
+      level: "85%",
+    },
+    {
       skill: "Bootstrap",
       image: bootstrap,
       level: "79%",
@@ -71,11 +76,6 @@ function MySkill() {
       skill: "JQuery",
       image: jquery,
       level: "68%",
-    },
-    {
-      skill: "Sass",
-      image: sass,
-      level: "65%",
     },
   ];
 
@@ -197,7 +197,7 @@ function MySkill() {
     <>
       <div id="Skills" className="myskill flex-col container section-padding-2">
         <div className="title flex-col">
-          <ScrollAnimation>
+          <ScrollAnimation extraAnimation={true}>
             <h4>My Skills</h4>
             <h2>My Expertises</h2>
           </ScrollAnimation>

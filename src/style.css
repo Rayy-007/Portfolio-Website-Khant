@@ -150,7 +150,7 @@ p.extra-small {
 Primary Button
 ================ */
 .btn-primary {
-  color: var(--white-color);
+  color: #fafafa;
   position: relative;
   z-index: 3; /* If I don't give that the Button will not appear */
 }

@@ -13,10 +13,8 @@ function AboutMe() {
       </div>
 
       <div className="about__content">
-        <ScrollAnimation>
+        <ScrollAnimation extraAnimation={true}>
           <h4>About</h4>
-        </ScrollAnimation>
-        <ScrollAnimation>
           <h2>About Me</h2>
         </ScrollAnimation>
 

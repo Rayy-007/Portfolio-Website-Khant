@@ -130,10 +130,8 @@ function Project() {
     <div id="Projects" className="projects container section-padding-2">
       <div className="top flex-row">
         <div className="title flex-col">
-          <ScrollAnimation>
+          <ScrollAnimation extraAnimation={true}>
             <h4>Recent Projects</h4>
-          </ScrollAnimation>
-          <ScrollAnimation>
             <h2>My Projects</h2>
           </ScrollAnimation>
         </div>

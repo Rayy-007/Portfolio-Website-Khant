@@ -62,8 +62,10 @@ function Testtmonial() {
     <div id="Testimonials" className="testimonial">
       <div className=" testimonial-container flex-col container section-padding-2">
         <div className="title">
-          <h4>Client Feedback</h4>
-          <h2>Customer testimonials</h2>
+          <ScrollAnimation extraAnimation={true}>
+            <h4>Client Feedback</h4>
+            <h2>Customer testimonials</h2>
+          </ScrollAnimation>
         </div>
 
         <div className="cards flex-row">{testimonialsCard}</div>

@@ -32,14 +32,17 @@ function Footer() {
     <div className="footer">
       <div className="footer-con container section-padding-3">
         <div className="above-footer flex-row">
-          <a className="logo flex-row" href="#home">
+          <a className="logo flex-row" href="/">
             <img className="logo-icon" src={KhantLogo} alt="Logo" />
             <img className="logo-text" src={KhantLogoText} alt="KhantLogo" />
           </a>
           <ul className="links flex-row">{navLinks}</ul>
           <div className="social flex-row">
             {/* Facebook */}
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100024914349183"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"
@@ -49,8 +52,8 @@ function Footer() {
                 <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
               </svg>
             </a>
-            {/*  */}
-            <a href="">
+            {/* GitHub */}
+            <a target="_blank" href="https://github.com/Rayy-007">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"
@@ -61,7 +64,10 @@ function Footer() {
               </svg>
             </a>
             {/* Linkedin */}
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/min-khant-0a0546232/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"

@@ -29,9 +29,11 @@ function Header() {
                 magnam.
               </p>
             </ScrollAnimation>
-            <a className="btn btn-primary" href="#Contact">
-              Get In Touch
-            </a>
+            <ScrollAnimation>
+              <a className="btn btn-primary" href="#Contact">
+                Get In Touch
+              </a>
+            </ScrollAnimation>
           </div>
 
           <div className="header-right">

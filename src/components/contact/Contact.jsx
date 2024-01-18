@@ -25,10 +25,8 @@ function Contact() {
   return (
     <div id="Contact" className="contact flex-col container section-padding-2">
       <div className="title flex-col">
-        <ScrollAnimation>
+        <ScrollAnimation extraAnimation={true}>
           <h4>Feel free to reach out by sending an email.</h4>
-        </ScrollAnimation>
-        <ScrollAnimation>
           <h2>Contact me</h2>
         </ScrollAnimation>
         <ScrollAnimation>

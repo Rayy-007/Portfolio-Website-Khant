@@ -75,7 +75,7 @@
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 
 .project-card .content {
@@ -112,17 +112,24 @@
 
 .project-card .content a img {
   transition: var(--smooth-move);
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 /* ====================
     Responsive Section
     =================== */
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1200px) {
   .recent.project-card {
     flex-direction: column;
   }
+  .recent.project-card img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .project-card img,
   .recent.project-card img {
     width: 100%;
     height: 200px;
