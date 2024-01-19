@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const Type = () => {
   const [text, setText] = useState("");
-  const phrases = ["Front-End Developer", "UI/UX Designer", "Passionate Coder"];
+  const phrases = [
+    "Frront-End Developer",
+    "UII/UX Designer",
+    "Paassionate Coder",
+  ];
   const speed = 100; // Adjust the typing speed (in milliseconds)
 
   useEffect(() => {
