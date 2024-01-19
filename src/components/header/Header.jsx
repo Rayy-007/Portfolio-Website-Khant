@@ -45,9 +45,18 @@ function Header() {
               <p>💌 min384223@gmail.com 📞 +959791883158</p>
             </ScrollAnimation>
             <ScrollAnimation>
-              <a className="btn btn-primary" href="#Contact">
-                Get In Touch
-              </a>
+              <div className="resume">
+                <a className="btn btn-primary" href="#Contact">
+                  Get In Touch
+                </a>
+                <a
+                  className="btn btn-outline"
+                  href="/Resume-Min-Khant.pdf"
+                  download="Min_Khant_Resume.pdf"
+                >
+                  Download Resume
+                </a>
+              </div>
             </ScrollAnimation>
           </div>
 
