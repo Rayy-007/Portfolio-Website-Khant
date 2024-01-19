@@ -18,6 +18,13 @@
   width: 80%;
 }
 
+.reach-me p {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
 /* ======================
     Contact form Styling
     ===================== */

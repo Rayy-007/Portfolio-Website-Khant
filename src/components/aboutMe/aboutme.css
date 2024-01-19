@@ -27,10 +27,15 @@
   padding-top: 1em;
 }
 
+.more-about {
+  display: block;
+  margin-top: 20px;
+}
+
 /* ====================
     Responsive Section
     =================== */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 987px) {
   .about {
     flex-direction: column-reverse;
   }
