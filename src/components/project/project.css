@@ -116,6 +116,10 @@
   height: 12px;
 }
 
+.more-projects {
+  align-self: center;
+}
+
 /* ====================
     Responsive Section
     =================== */

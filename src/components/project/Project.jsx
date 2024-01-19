@@ -147,6 +147,13 @@ function Project() {
 
       <div className="projects-con">{recentProjectsCard}</div>
       <div className="projects-con">{projectsCard}</div>
+      <a
+        href="https://github.com/Rayy-007"
+        target="_blank"
+        className="btn-outline btn more-projects"
+      >
+        More Projects
+      </a>
     </div>
   );
 }

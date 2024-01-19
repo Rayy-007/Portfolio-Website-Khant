@@ -2,6 +2,8 @@ import React from "react";
 import "./aboutme.css";
 import { aboutMe } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
+import AgeCounter from "./AgeCounter";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 function AboutMe() {
   return (
@@ -21,36 +23,46 @@ function AboutMe() {
         <div className="description">
           <ScrollAnimation>
             <p>
-              Hi there! I'm Min Khant, a 21-years-old software engineer from
-              Mandalay, Myanmar. I'm currently pursuing a Pearson Level 5 Higher
+              Hey, I'm Min Khant, a <AgeCounter /> software engineer from
+              Mandalay, Myanmar. Currently pursuing a Pearson Level 5 Higher
               National Diploma in Computer Sciences at EduCLaaS Academy, Lithan
-              University. Prior to that, I successfully completed a Level 3
-              Higher National Certificate in Computer Sciences.
+              University, I'm on a journey to transform ideas into digital
+              experiences.
             </p>
           </ScrollAnimation>
           <p className="extra-small">
             <ScrollAnimation>
               <li>
-                👨‍💻 Proficient in React.JS, JavaScript, HTML, CSS, Bootstrap,
-                jQuery, REST APIs, Firebase, Java, MySQL, RDBMS
+                🚀 Proficient in ReactJS, NextJs, TypeScirpt, JavaScript,
+                Tailwind, Bootstrap, jQuery, REST APIs, Firebase, Java, MySQL,
+                MongoDb
               </li>
             </ScrollAnimation>
             <ScrollAnimation>
               <li>
-                ✨ Skilled in creating stunning UI/UX design and developing
+                💻 Skilled in creating stunning UI/UX design and developing
                 fully responsive website
               </li>
             </ScrollAnimation>
             <ScrollAnimation>
               <li>
-                🔑 I am a dedicated, driven professional who thrives in
-                collaborative environments and can handle pressure effectively.
-                I am constantly eager to enhance my skills and stay up to date
-                with the latest trends in web development.
+                🌟 Beyond the code, I'm a dedicated professional thriving in
+                collaborative environments. I thrive under pressure, constantly
+                seeking to enhance my skills and stay ahead in the dynamic world
+                of web development.
               </li>
             </ScrollAnimation>
           </p>
         </div>
+        <ScrollAnimation>
+          <a
+            href="https://www.linkedin.com/in/min-khant-0a0546232/"
+            className="btn btn-primary more-about"
+            target="_blank"
+          >
+            More About Me
+          </a>
+        </ScrollAnimation>
       </div>
     </div>
   );
