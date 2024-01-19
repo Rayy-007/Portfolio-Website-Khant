@@ -3,7 +3,7 @@ import "./header.css";
 import { Me } from "../Image";
 
 import ScrollAnimation from "../utils/ScrollAnimation";
-import TypewriterEffect from "./Typewritereffect";
+import Type from "./Type";
 
 function Header() {
   const [isHover, setIsHover] = useState(false);
@@ -32,7 +32,7 @@ function Header() {
                 <h1>
                   <span>
                     <span className="title-small">I am a </span>
-                    <TypewriterEffect />
+                    <Type />
                   </span>
                 </h1>
               )}

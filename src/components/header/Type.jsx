@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TypewriterEffect = () => {
+const Type = () => {
   const [text, setText] = useState("");
   const phrases = ["Front-End Developer", "UI/UX Designer", "Passionate Coder"];
   const speed = 100; // Adjust the typing speed (in milliseconds)
@@ -50,4 +50,4 @@ const TypewriterEffect = () => {
   return <span>{text}</span>;
 };
 
-export default TypewriterEffect;
+export default Type;
