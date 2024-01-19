@@ -41,6 +41,10 @@ import charity from "../assets/projects/charity.png";
 // Khan Rayy Logo
 import KhantLogo from "../assets/logo/khant-logo.png";
 import KhantLogoText from "../assets/logo/khant-logo-text.png";
+// Education
+import Scrimba from "../assets/education/scrimba.png";
+import Lithan from "../assets/education/lithan.jpeg";
+import Yadanabon from "../assets/education/yadanabon.png";
 
 export {
   aboutMe,
@@ -78,4 +82,7 @@ export {
   quizzical,
   KhantLogo,
   KhantLogoText,
+  Scrimba,
+  Lithan,
+  Yadanabon,
 };

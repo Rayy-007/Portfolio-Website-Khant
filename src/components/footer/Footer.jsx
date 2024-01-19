@@ -12,7 +12,7 @@ function Footer() {
     "AboutMe",
     "Contact",
     "Projects",
-    "Testimonials",
+    "Education",
   ];
 
   // Creating Dynamic Active Nabar Links

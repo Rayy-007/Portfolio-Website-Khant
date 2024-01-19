@@ -16,13 +16,7 @@ function Navbar() {
   };
 
   //  Navbar Links Name
-  const navLinksName = [
-    "Home",
-    "Skills",
-    "AboutMe",
-    "Projects",
-    "Testimonials",
-  ];
+  const navLinksName = ["Home", "Skills", "AboutMe", "Projects", "Education"];
 
   // Creating Dynamic Active Nabar Links
   const navLinks = navLinksName.map((link) => (

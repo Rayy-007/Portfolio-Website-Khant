@@ -1,6 +1,10 @@
 /* =============================
     Testimonial Section Styling 
     ============================ */
+.education .edu p {
+  margin-top: 8px;
+}
+
 .testimonial {
   background-color: var(--bg-color);
 }

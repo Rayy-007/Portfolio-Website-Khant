@@ -38,6 +38,11 @@
   width: min(658px, 100%);
 }
 
+.resume {
+  display: flex;
+  gap: 30px;
+}
+
 /* ====================
     Responsive Section
     =================== */
@@ -61,5 +66,12 @@
 
   .header-right img {
     margin-top: 7vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .resume {
+    flex-direction: column;
+    gap: 8px;
   }
 }
