@@ -1,32 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Me } from "../Image";
 
 import ScrollAnimation from "../utils/ScrollAnimation";
+import TypewriterEffect from "./Typewritereffect";
 
 function Header() {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <>
       <div id="Home" className="header section-padding-1">
         <div className="container  header-container flex-row">
-          <div className="header-left flex-col">
+          <div
+            className="header-left flex-col"
+            onMouseEnter={() => setIsHover((prev) => !prev)}
+          >
             <ScrollAnimation>
               <h4>Hey, I am Min Khant</h4>
             </ScrollAnimation>
             <ScrollAnimation>
-              <h1>
-                <span>
-                  <span className="title-small">I am </span> Front-End{" "}
-                  <span className="title-small">Developer and</span> UI/UX{" "}
-                  <span className="title-small">Designer.</span>{" "}
-                </span>
-              </h1>
+              {isHover ? (
+                <h1>
+                  <span>
+                    <span className="title-small">I am </span> Front-End{" "}
+                    <span className="title-small">Developer and</span> UI/UX{" "}
+                    <span className="title-small">Designer.</span>{" "}
+                  </span>
+                </h1>
+              ) : (
+                <h1>
+                  <span>
+                    <span className="title-small">I am a </span>
+                    <TypewriterEffect />
+                  </span>
+                </h1>
+              )}
             </ScrollAnimation>
             <ScrollAnimation>
               <p className="small">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
-                magnam.
+                I bring ideas to life through clean and user-friendly
+                interfaces. Let's create something extraordinary together!
               </p>
             </ScrollAnimation>
             <ScrollAnimation>
