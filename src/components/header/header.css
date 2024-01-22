@@ -43,6 +43,22 @@
   gap: 30px;
 }
 
+.reach-me-home {
+  width: 100%;
+}
+.reach-me-home,
+.reach-me-home p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.reach-me-home p,
+p.reach-me-home {
+  margin-bottom: 9px;
+}
+
 /* ====================
     Responsive Section
     =================== */
@@ -73,5 +89,8 @@
   .resume {
     flex-direction: column;
     gap: 8px;
+  }
+  .reach-me-home {
+    flex-direction: column;
   }
 }

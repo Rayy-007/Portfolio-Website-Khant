@@ -45,7 +45,7 @@ function Contact() {
           className="btn btn-outline"
           onClick={() => setIsGiveMeMail((prev) => !prev)}
         >
-          Give Me Contact Info
+          Show {isGiveMeMail ? "Contact From" : "Contact Info"}
         </button>
       </ScrollAnimation>
 

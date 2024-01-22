@@ -35,7 +35,7 @@ function MySkill() {
     {
       skill: "Front End Development",
       description:
-        "Proficient in front-end development 🐱‍🏍, I specialize in crafting engaging and responsive user interfaces.",
+        "Proficient in front-end development 🚀, I specialize in crafting engaging and responsive user interfaces.",
       image: frontDev,
     },
     {

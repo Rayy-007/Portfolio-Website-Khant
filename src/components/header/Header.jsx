@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Me } from "../Image";
+import { FaViber } from "react-icons/fa";
+import { ImMail4 } from "react-icons/im";
 
 import ScrollAnimation from "../utils/ScrollAnimation";
 import Type from "./Type";
@@ -42,7 +44,17 @@ function Header() {
                 I bring ideas to life through clean and user-friendly
                 interfaces. Let's create something extraordinary together!
               </p>
-              <p>💌 min384223@gmail.com 📞 +959791883158</p>
+              {/* <p className="contact-info">
+                <ImMail4 /> min384223@gmail.com | <FaViber /> +959791883158
+              </p> */}
+              <p className="reach-me-home">
+                <p>
+                  <ImMail4 /> min384223@gmail.com
+                </p>
+                <p>
+                  <FaViber /> +959791883158
+                </p>
+              </p>
             </ScrollAnimation>
             <ScrollAnimation>
               <div className="resume">
