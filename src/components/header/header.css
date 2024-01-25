@@ -85,7 +85,7 @@ p.reach-me-home {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
   .resume {
     flex-direction: column;
     gap: 8px;
