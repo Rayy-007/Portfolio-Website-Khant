@@ -21,7 +21,7 @@
   margin-bottom: 0px;
 }
 
-.header-left p {
+.header-left .objective {
   width: 75%;
   margin-bottom: 40px;
 }
@@ -40,23 +40,19 @@
 
 .resume {
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 
 .reach-me-home {
-  width: 100%;
-}
-.reach-me-home,
-.reach-me-home p {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
 }
 
-.reach-me-home p,
-p.reach-me-home {
-  margin-bottom: 9px;
+.reach-me-home p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* ====================
@@ -74,7 +70,7 @@ p.reach-me-home {
     text-align: center;
   }
 
-  .header-left p,
+  .header-left .objective,
   .header-right,
   .header-right img {
     width: 100%;
@@ -83,14 +79,26 @@ p.reach-me-home {
   .header-right img {
     margin-top: 7vw;
   }
+  .reach-me-home {
+    justify-content: center;
+  }
+  .reach-me-home p {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 396px) {
   .resume {
     flex-direction: column;
     gap: 8px;
   }
   .reach-me-home {
     flex-direction: column;
+  }
+  .header-left .objective {
+    margin-bottom: 20px;
+  }
+  .header-left a {
+    margin-top: 10px;
   }
 }

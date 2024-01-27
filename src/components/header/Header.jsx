@@ -40,21 +40,18 @@ function Header() {
               )}
             </ScrollAnimation>
             <ScrollAnimation>
-              <p className="small">
+              <p className="objective small">
                 I bring ideas to life through clean and user-friendly
                 interfaces. Let's create something extraordinary together!
               </p>
-              {/* <p className="contact-info">
-                <ImMail4 /> min384223@gmail.com | <FaViber /> +959791883158
-              </p> */}
-              <p className="reach-me-home">
+              <div className="reach-me-home">
                 <p>
                   <ImMail4 /> min384223@gmail.com
                 </p>
                 <p>
                   <FaViber /> +959791883158
                 </p>
-              </p>
+              </div>
             </ScrollAnimation>
             <ScrollAnimation>
               <div className="resume">
@@ -74,7 +71,7 @@ function Header() {
 
           <div className="header-right">
             <ScrollAnimation>
-              <img src={Me} alt="Photo of Me" />
+              <img src={Me} alt="Photo of Min Khant" />
             </ScrollAnimation>
           </div>
         </div>

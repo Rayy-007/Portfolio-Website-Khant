@@ -9,6 +9,8 @@ import {
   Lithan,
   Scrimba,
   Yadanabon,
+  stars3,
+  stars4,
 } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
 
@@ -45,6 +47,7 @@ function Testtmonial() {
       start: "20.1.2022",
       end: "Ongoing",
       img: Lithan,
+      star: stars4,
     },
     {
       name: "Scrimba Academy",
@@ -52,6 +55,7 @@ function Testtmonial() {
       start: "26.2.2023",
       end: "10.12.2023",
       img: Scrimba,
+      star: stars,
     },
     {
       name: "Yadanabon University",
@@ -59,6 +63,7 @@ function Testtmonial() {
       start: "16.6.2018",
       end: "Ongoing",
       img: Yadanabon,
+      star: stars3,
     },
   ];
 
@@ -66,7 +71,7 @@ function Testtmonial() {
   const testimonialsCard = educationData.map((data, index) => (
     <div key={index} className="card flex-col education">
       <ScrollAnimation>
-        <img className="stars" src={stars} alt="Stars" />
+        <img className="stars" src={data.star} alt="Stars" />
       </ScrollAnimation>
 
       <ScrollAnimation>

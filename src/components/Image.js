@@ -6,6 +6,8 @@ import person1 from "../assets/person1.png";
 import person2 from "../assets/person2.png";
 import person3 from "../assets/person3.png";
 import stars from "../assets/stars.png";
+import stars4 from "../assets/Stars4.png";
+import stars3 from "../assets/Stars3.png";
 
 // Skills
 import frontDev from "../assets/frontend-dev.png";
@@ -85,4 +87,6 @@ export {
   Scrimba,
   Lithan,
   Yadanabon,
+  stars3,
+  stars4,
 };
