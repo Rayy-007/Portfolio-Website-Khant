@@ -88,6 +88,12 @@ function Footer() {
             <p>Growth 💪</p>
             <p>Progress 🚀</p>
             <p>Enjoy In Life 💕</p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/posts/min-khant-0a0546232_exciting-update-my-new-portfolio-project-activity-7156222700208742400-55C1?utm_source=share&utm_medium=member_desktop"
+            >
+              How I built this portofolio?
+            </a>
           </div>
         </div>
       </div>
