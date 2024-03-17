@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./project.css";
 
 import { github, arrow } from "../Image";
@@ -7,51 +7,59 @@ import { projectsData } from "./projectsData";
 
 function Project() {
   const [projectTabMenu, setProjectTabMenu] = useState("all");
+  const [visibleProjects, setVisibleProjects] = useState(6);
+  const [loading, setLoading] = useState(false);
+  const projectSectionRef = useRef(null);
 
-  const recentProjectsCard = projectsData.slice(0, 2).map((data, index) => (
-    <div key={index} className=" recent project-card">
-      <img src={data.image} alt="React Project Image" />
+  const handleLoadMore = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3);
+      setLoading(false);
+    }, 800);
+  };
+  const handleHide = () => {
+    setVisibleProjects(6);
+    projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
-      <div className="content">
-        <ScrollAnimation>
-          <h3>{data.title}</h3>
-        </ScrollAnimation>
-        <ScrollAnimation>
-          <p className="extra-small">{data.description}</p>
-        </ScrollAnimation>
-        <div className="view-con">
-          <a href={data.codeUrl} target="_blank" className="view  flex-row">
-            View Sourcecode <img src={arrow} alt="Arrow" />
-          </a>
-          <a href={data.websiteURl} target="_blank" className="view  flex-row">
-            View Website <img src={arrow} alt="Arrow" />
-          </a>
+  const filteredProjectsData = projectsData.filter((projectData) => {
+    if (projectTabMenu === "all") return true;
+    return projectTabMenu === projectData.type;
+  });
+
+  const projectsCard = filteredProjectsData
+    .slice(0, visibleProjects)
+    .map((data, index) => (
+      <div key={index} className="project-card">
+        <img src={data.image} alt="React Project Image" />
+        <div className="content">
+          <ScrollAnimation>
+            <h3>{data.title}</h3>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <p className="extra-small">{data.description}</p>
+            <div className="languages-con">
+              {data.languages.map((language) => (
+                <div className="language-badge">{language}</div>
+              ))}
+            </div>
+          </ScrollAnimation>
+          <div className="view-con">
+            <a href={data.codeUrl} target="_blank" className="view  flex-row">
+              View Sourcecode <img src={arrow} alt="Arrow" />
+            </a>
+            <a
+              href={data.websiteURl}
+              target="_blank"
+              className="view  flex-row"
+            >
+              View Website <img src={arrow} alt="Arrow" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  ));
-
-  const projectsCard = projectsData.slice(2).map((data, index) => (
-    <div key={index} className="project-card">
-      <img src={data.image} alt="React Project Image" />
-      <div className="content">
-        <ScrollAnimation>
-          <h3>{data.title}</h3>
-        </ScrollAnimation>
-        <ScrollAnimation>
-          <p className="extra-small">{data.description}</p>
-        </ScrollAnimation>
-        <div className="view-con">
-          <a href={data.codeUrl} target="_blank" className="view  flex-row">
-            View Sourcecode <img src={arrow} alt="Arrow" />
-          </a>
-          <a href={data.websiteURl} target="_blank" className="view  flex-row">
-            View Website <img src={arrow} alt="Arrow" />
-          </a>
-        </div>
-      </div>
-    </div>
-  ));
+    ));
 
   const calculateTabMoverPosition = () => {
     if (projectTabMenu === "all") return "0%";
@@ -62,7 +70,11 @@ function Project() {
   };
 
   return (
-    <div id="Projects" className="projects container section-padding-2">
+    <div
+      ref={projectSectionRef}
+      id="Projects"
+      className="projects container section-padding-2"
+    >
       <div className="top flex-row">
         <div className="title flex-col">
           <ScrollAnimation extraAnimation={true}>
@@ -113,20 +125,69 @@ function Project() {
         </ul>
       </div>
 
-      <div className="projects-con">{recentProjectsCard}</div>
       <div className="projects-con">{projectsCard}</div>
-      <a
-        href="https://github.com/Rayy-007"
-        target="_blank"
-        className="btn-outline btn more-projects"
-      >
-        More Projects
-      </a>
+      {visibleProjects < filteredProjectsData.length ? (
+        <button
+          onClick={handleLoadMore}
+          className="btn-outline btn more-projects"
+        >
+          {loading ? "Loading..." : "Load More Projects"}
+        </button>
+      ) : (
+        <button onClick={handleHide} className="btn-outline btn more-projects">
+          Hide Projects
+        </button>
+      )}
     </div>
   );
 }
 
 export default Project;
+
+{
+  /* <a
+href="https://github.com/Rayy-007"
+target="_blank"
+className="btn-outline btn more-projects"
+>
+More Projects
+</a> */
+}
+// ? Recent Projects TOP TWO
+// <div className="projects-con">{recentProjectsCard}</div>
+// const recentProjectsCard = filteredProjectsData
+// .slice(0, 2)
+// .map((data, index) => (
+//   <div key={index} className=" recent project-card">
+//     <img src={data.image} alt="React Project Image" />
+
+//     <div className="content">
+//       <ScrollAnimation>
+//         <h3>{data.title}</h3>
+//       </ScrollAnimation>
+//       <ScrollAnimation>
+//         <p className="extra-small">{data.description}</p>
+//         <div className="languages-con">
+//           {data.languages.map((language) => (
+//             <div className="language-badge">{language}</div>
+//           ))}
+//         </div>
+//       </ScrollAnimation>
+//       <div className="view-con">
+//         <a href={data.codeUrl} target="_blank" className="view  flex-row">
+//           View Sourcecode <img src={arrow} alt="Arrow" />
+//         </a>
+//         <a
+//           href={data.websiteURl}
+//           target="_blank"
+//           className="view  flex-row"
+//         >
+//           View Website <img src={arrow} alt="Arrow" />
+//         </a>
+//       </div>
+//     </div>
+//   </div>
+// ));
 
 // ? GitHub API Tested
 // const [repoDetails, setRepoDetails] = useState(null);

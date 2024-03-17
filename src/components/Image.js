@@ -35,11 +35,21 @@ import prototype from "../assets/skills/prototype.png";
 import wireframe from "../assets/skills/wireframe.png";
 
 // Projects
-import quizzical from "../assets/projects/quizzical.png";
 import dobu from "../assets/projects/dobu.png";
 import dashboard from "../assets/projects/dashboard.png";
 import ecommerce from "../assets/projects/ecommerce.png";
 import charity from "../assets/projects/charity.png";
+import audio from "../assets/projects/audio-website.png";
+import nextjsEcommerce from "../assets/projects/nextjs-ecommerce.png";
+import clock from "../assets/projects/clock.png";
+import gpt3 from "../assets/projects/gpt3.png";
+import inabox from "../assets/projects/inabox.png";
+// Projects App
+import quizzical from "../assets/projects/quizzical.png";
+import memeGame from "../assets/projects/meme-game.png";
+import tenzieGame from "../assets/projects/tenzie-game.png";
+import tictactoe from "../assets/projects/tictactoe.png";
+import typingGame from "../assets/projects/typing-game.png";
 // Khan Rayy Logo
 import KhantLogo from "../assets/logo/khant-logo.png";
 import KhantLogoText from "../assets/logo/khant-logo-text.png";
@@ -68,6 +78,13 @@ export {
   tailwind,
   jquery,
   sass,
+  clock,
+  gpt3,
+  inabox,
+  memeGame,
+  tenzieGame,
+  tictactoe,
+  typingGame,
   bootstrap,
   springboot,
   java,
@@ -81,6 +98,8 @@ export {
   dashboard,
   dobu,
   ecommerce,
+  nextjsEcommerce,
+  audio,
   quizzical,
   KhantLogo,
   KhantLogoText,
