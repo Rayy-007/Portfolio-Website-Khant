@@ -50,6 +50,14 @@ import memeGame from "../assets/projects/meme-game.png";
 import tenzieGame from "../assets/projects/tenzie-game.png";
 import tictactoe from "../assets/projects/tictactoe.png";
 import typingGame from "../assets/projects/typing-game.png";
+import noteApp from "../assets/projects/note-app.png";
+// Project UIUX
+import audioUIUX from "../assets/projects/audio-uiux.png";
+import charityUIUX from "../assets/projects/charity-uiux.png";
+import communityUIUX from "../assets/projects/community-uiux.png";
+import droneUIUX from "../assets/projects/drone-uiux.png";
+import movieUIUX from "../assets/projects/movie-uiux.png";
+import portfolioUIUX from "../assets/projects/portfolio-uiux.png";
 // Khan Rayy Logo
 import KhantLogo from "../assets/logo/khant-logo.png";
 import KhantLogoText from "../assets/logo/khant-logo-text.png";
@@ -81,6 +89,7 @@ export {
   clock,
   gpt3,
   inabox,
+  noteApp,
   memeGame,
   tenzieGame,
   tictactoe,
@@ -101,6 +110,12 @@ export {
   nextjsEcommerce,
   audio,
   quizzical,
+  audioUIUX,
+  charityUIUX,
+  communityUIUX,
+  droneUIUX,
+  movieUIUX,
+  portfolioUIUX,
   KhantLogo,
   KhantLogoText,
   Scrimba,

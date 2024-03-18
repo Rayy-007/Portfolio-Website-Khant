@@ -10,9 +10,16 @@ import {
   gpt3,
   inabox,
   memeGame,
+  noteApp,
   tenzieGame,
   tictactoe,
   typingGame,
+  audioUIUX,
+  charityUIUX,
+  communityUIUX,
+  droneUIUX,
+  movieUIUX,
+  portfolioUIUX,
 } from "../Image";
 
 // Projects Data for Projects Card
@@ -22,7 +29,7 @@ export const projectsData = [
     description:
       "🤹‍♀️Quizzical App is a dynamic React application that challenges users with a variety of quizzes sourced from an external quiz API.",
     codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    websiteURl: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://react-quizzical-app-khant.netlify.app/",
     image: quizzical,
     type: "app",
     languages: ["React", "QuizAPI"],
@@ -32,7 +39,7 @@ export const projectsData = [
     description:
       "🛒Ecommerce with accurate functionality such as add to cart, checkout",
     codeUrl: "https://github.com/Rayy-007/nextjs-ecommerce-project",
-    websiteURl: "https://nextjs-ecommerce-project-khants-projects.vercel.app/",
+    websiteURL: "https://nextjs-ecommerce-project-khants-projects.vercel.app/",
     image: nextjsEcommerce,
     type: "website",
     languages: ["NextJs", "TypeScript", "Tailwind", "DaisyUI", "MongoDb"],
@@ -42,7 +49,7 @@ export const projectsData = [
     description:
       "🔉The commerce website that allows customers to effortlessly explore business products, make payments interact with business dynamically.",
     codeUrl: "https://github.com/tin0312/audiophile-ecommerce",
-    websiteURl: "https://magnificent-ganache-d966b4.netlify.app/",
+    websiteURL: "https://magnificent-ganache-d966b4.netlify.app/",
     image: audio,
     type: "website",
     languages: ["NextJs", "TypeScript", "Tailwind", "Firebase"],
@@ -52,7 +59,7 @@ export const projectsData = [
     description:
       "🏋️‍♀️DoBu Martial Arts Project is a visually appealing website crafted entirely with my own design.",
     codeUrl: "https://github.com/Rayy-007/DoBu-Martial-arts-project",
-    websiteURl: "https://dobumartialarts.netlify.app/",
+    websiteURL: "https://dobumartialarts.netlify.app/",
     image: dobu,
     type: "website",
     languages: ["JavaScript", "JQuery", "HTML", "CSS"],
@@ -62,7 +69,7 @@ export const projectsData = [
     description:
       "🎨Dashboard Simple Project is a sleek and modern web application designed as an admin dashboard.",
     codeUrl: "https://github.com/Rayy-007/dashboard-simple-project",
-    websiteURl: "https://dashboard-simple-project.netlify.app/",
+    websiteURL: "https://dashboard-simple-project.netlify.app/",
     image: dashboard,
     type: "website",
     languages: ["HTML", "CSS"],
@@ -72,7 +79,7 @@ export const projectsData = [
     description:
       "⚡ Full-stack development project for MerryMeal - Charity Organization.",
     codeUrl: "https://github.com/Rayy-007/meals-on-wheel-project",
-    websiteURl: "https://charity-organization-by-khant.netlify.app/",
+    websiteURL: "https://charity-organization-by-khant.netlify.app/",
     image: charity,
     type: "website",
     languages: ["React", "Java", "SpringBoot"],
@@ -82,7 +89,7 @@ export const projectsData = [
     description:
       "🛒This Ecommerce Project is a comprehensive web application focused on building a responsive ecommerce website.",
     codeUrl: "https://github.com/Rayy-007/Ecommerce-Website-By-Khant",
-    websiteURl: "https://multi-page-ecommerce-by-khant.netlify.app/",
+    websiteURL: "https://multi-page-ecommerce-by-khant.netlify.app/",
     image: ecommerce,
     type: "website",
     languages: ["HTML", "CSS", "JavaScript"],
@@ -92,7 +99,7 @@ export const projectsData = [
     description:
       "🤖A clone of the OpenAI GPT-3 website showcasing its capabilities and features.",
     codeUrl: "https://github.com/Rayy-007/GPT-3-React-Web",
-    websiteURl: "https://gpt3-react-khant.netlify.app/",
+    websiteURL: "https://gpt3-react-khant.netlify.app/",
     image: gpt3,
     type: "website",
     languages: ["React", "Responsive"],
@@ -102,7 +109,7 @@ export const projectsData = [
     description:
       "⌨️ Test your typing speed with this fun and interactive React typing game.",
     codeUrl: "https://github.com/Rayy-007/react-typing-game",
-    websiteUrl: "https://react-typing-game-khant.netlify.app/",
+    websiteURL: "https://react-typing-game-khant.netlify.app/",
     image: typingGame,
     type: "app",
     languages: ["React", "JavaScript", "HTML", "CSS"],
@@ -112,16 +119,26 @@ export const projectsData = [
     description:
       "🎮 Enjoy the classic TicTacToe game with friends or against the computer.",
     codeUrl: "https://github.com/Rayy-007",
-    websiteUrl: "https://react-tictactoe-game-project.netlify.app",
+    websiteURL: "https://react-tictactoe-game-project.netlify.app",
     image: tictactoe,
     type: "app",
     languages: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
+    title: "MDE Note App with React",
+    description:
+      "📝 Create and manage your notes with Markdown support using this React-based MDE (Markdown Editor) note-taking app.",
+    codeUrl: "https://github.com/Rayy-007/react-mde-note-app",
+    websiteURL: "https://react-note-khant.netlify.app/",
+    image: noteApp,
+    type: "app",
+    languages: ["React", "Markdown", "JavaScript", "CSS"],
+  },
+  {
     title: "Tenzies Game",
     description: "🎲 Test your luck and speed with this fast-paced dice game.",
     codeUrl: "https://github.com/Rayy-007",
-    websiteUrl: "https://react-project-tenzies-game.netlify.app",
+    websiteURL: "https://react-project-tenzies-game.netlify.app",
     image: tenzieGame,
     type: "app",
     languages: ["React", "JavaScript", "HTML", "CSS"],
@@ -131,7 +148,7 @@ export const projectsData = [
     description:
       "🎭 Create hilarious memes easily using this React.js application.",
     codeUrl: "https://github.com/Rayy-007/react-project-meme",
-    websiteUrl: "https://react-projecty-meme.netlify.app/",
+    websiteURL: "https://react-projecty-meme.netlify.app/",
     image: memeGame,
     type: "app",
     languages: ["React", "JavaScript", "HTML", "CSS"],
@@ -141,7 +158,7 @@ export const projectsData = [
     description:
       "⏰ Stay organized and track time with this simple clock Chrome extension.",
     codeUrl: "https://github.com/Rayy-007/Creative-Clock-Web",
-    webkitURL: "https://clock-by-khant.netlify.app/",
+    websiteURL: "https://clock-by-khant.netlify.app/",
     image: clock,
     type: "website",
     languages: ["JavaScript", "HTML", "CSS"],
@@ -151,9 +168,51 @@ export const projectsData = [
     description:
       "🍱 Explore delicious meals and order food conveniently with this multiple-page website.",
     codeUrl: "https://github.com/Rayy-007",
-    websiteUrl: "https://inabox-my-first-website.netlify.app/",
+    websiteURL: "https://inabox-my-first-website.netlify.app/",
     image: inabox,
     type: "website",
-    languages: ["HTML", "CSS", "JavaScript"],
+    languages: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+  },
+  {
+    title: "Audio Ecommerce",
+    description: "🎧 UI/UX design for an audio ecommerce platform.",
+    image: audioUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
+  },
+  {
+    title: "Charity",
+    description: "🤝 uiux design for a charity organization website.",
+    image: charityUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
+  },
+  {
+    title: "Community",
+    description: "🏘️ uiux design for a community platform.",
+    image: communityUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
+  },
+  {
+    title: "Drone",
+    description: "🚁 uiux design for a drone service website.",
+    image: droneUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
+  },
+  {
+    title: "Movie Search",
+    description: "🎬 uiux design for a movie search application.",
+    image: movieUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
+  },
+  {
+    title: "Portfolio",
+    description: "📁 uiux design for a portfolio website.",
+    image: portfolioUIUX,
+    type: "uiux",
+    languages: ["Figma", "UI UX"],
   },
 ];

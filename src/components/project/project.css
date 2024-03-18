@@ -143,7 +143,7 @@
     Project Tab Menu
     ================== */
 .project-tab {
-  width: 40%;
+  width: min(530px, 100%);
 }
 
 .project-tab ul {
@@ -215,6 +215,10 @@
   .projects-con .project-card:last-child {
     max-width: 100%;
   }
+
+  .project-tab ul li {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -226,5 +230,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 3vw;
+  }
+
+  .project-tab ul li {
+    font-size: 12px;
   }
 }

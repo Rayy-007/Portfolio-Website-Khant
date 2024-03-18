@@ -45,18 +45,20 @@ function Project() {
               ))}
             </div>
           </ScrollAnimation>
-          <div className="view-con">
-            <a href={data.codeUrl} target="_blank" className="view  flex-row">
-              View Sourcecode <img src={arrow} alt="Arrow" />
-            </a>
-            <a
-              href={data.websiteURl}
-              target="_blank"
-              className="view  flex-row"
-            >
-              View Website <img src={arrow} alt="Arrow" />
-            </a>
-          </div>
+          {data.type !== "uiux" && (
+            <div className="view-con">
+              <a href={data.codeUrl} target="_blank" className="view  flex-row">
+                View Sourcecode <img src={arrow} alt="Arrow" />
+              </a>
+              <a
+                href={data.websiteURL}
+                target="_blank"
+                className="view  flex-row"
+              >
+                View Website <img src={arrow} alt="Arrow" />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     ));

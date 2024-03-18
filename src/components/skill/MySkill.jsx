@@ -199,7 +199,7 @@ function MySkill() {
         <div className="title flex-col">
           <ScrollAnimation extraAnimation={true}>
             <h4>My Skills</h4>
-            <h2>My Expertises</h2>
+            <h2>My Expertise</h2>
           </ScrollAnimation>
         </div>
 
