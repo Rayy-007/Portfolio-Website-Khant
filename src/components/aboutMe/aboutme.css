@@ -27,10 +27,21 @@
   padding-top: 1em;
 }
 
-.more-about {
-  display: block;
-  margin-top: 20px;
+.cta-about {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
 }
+
+.more-about {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* .linkedin-icon {
+  margin-right: 10px;
+} */
 
 /* ====================
     Responsive Section
@@ -42,5 +53,11 @@
 
   .about__img img {
     width: min(90%, 420px);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .cta-about {
+    flex-direction: column;
   }
 }

@@ -3,7 +3,7 @@ import "./aboutme.css";
 import { aboutMe } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
 import AgeCounter from "./AgeCounter";
-import { SlSocialLinkedin } from "react-icons/sl";
+import { FaLinkedin, FaYoutube } from "react-icons/fa";
 
 function AboutMe() {
   return (
@@ -55,13 +55,24 @@ function AboutMe() {
           </p>
         </div>
         <ScrollAnimation>
-          <a
-            href="https://www.linkedin.com/in/min-khant-0a0546232/"
-            className="btn btn-primary more-about"
-            target="_blank"
-          >
-            More About Me
-          </a>
+          <div className="cta-about">
+            <a
+              href="https://www.linkedin.com/in/min-khant-0a0546232/"
+              className="btn btn-primary more-about"
+              target="_blank"
+            >
+              <FaLinkedin className="linkedin-icon" />
+              More About Me
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=zGPVPszalTA&t=13s"
+              className="btn btn-outline more-about "
+              target="_blank"
+            >
+              <FaYoutube />
+              Introduction Video
+            </a>
+          </div>
         </ScrollAnimation>
       </div>
     </div>

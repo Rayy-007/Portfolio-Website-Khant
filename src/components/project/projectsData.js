@@ -49,7 +49,7 @@ export const projectsData = [
     description:
       "🔉The commerce website that allows customers to effortlessly explore business products, make payments interact with business dynamically.",
     codeUrl: "https://github.com/tin0312/audiophile-ecommerce",
-    websiteURL: "https://magnificent-ganache-d966b4.netlify.app/",
+    websiteURL: "https://audio-website-by-khant.netlify.app/",
     image: audio,
     type: "website",
     languages: ["NextJs", "TypeScript", "Tailwind", "Firebase"],
