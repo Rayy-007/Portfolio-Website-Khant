@@ -50,12 +50,12 @@ function MySkill() {
     {
       skill: "Ract Js",
       image: reactLogo,
-      level: "97%",
+      level: "99%",
     },
     {
       skill: "Next Js",
       image: nextjs,
-      level: "88%",
+      level: "80%",
     },
     {
       skill: "Tailwind",
@@ -65,17 +65,17 @@ function MySkill() {
     {
       skill: "TypeScript",
       image: typescript,
-      level: "85%",
+      level: "80%",
     },
     {
       skill: "Bootstrap",
       image: bootstrap,
-      level: "79%",
+      level: "70%",
     },
     {
       skill: "JQuery",
       image: jquery,
-      level: "68%",
+      level: "60%",
     },
   ];
 
@@ -83,7 +83,7 @@ function MySkill() {
     {
       skill: "Figma",
       image: figma,
-      level: "87%",
+      level: "80%",
     },
     {
       skill: "Wireframe",
@@ -93,7 +93,7 @@ function MySkill() {
     {
       skill: "Prototype",
       image: prototype,
-      level: "84%",
+      level: "80%",
     },
   ];
 
@@ -101,27 +101,27 @@ function MySkill() {
     {
       skill: "Springboot",
       image: springboot,
-      level: "81%",
+      level: "80%",
     },
     {
       skill: "Java",
       image: java,
-      level: "75%",
+      level: "80%",
     },
     {
       skill: "Mysql",
       image: mysql,
-      level: "84%",
+      level: "80%",
     },
     {
       skill: "Firebase",
       image: firebase,
-      level: "89%",
+      level: "90%",
     },
     {
       skill: "Mongodb",
       image: mongodb,
-      level: "61%",
+      level: "70%",
     },
   ];
 
