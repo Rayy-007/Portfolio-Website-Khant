@@ -14,21 +14,6 @@ import frontDev from "../assets/frontend-dev.png";
 import strategy from "../assets/strategy.png";
 import uiUX from "../assets/ui-ux.png";
 import fullstack from "../assets/skills/fullstack.png";
-// Frontend Skills
-import reactLogo from "../assets/react-logo.png";
-import nextjs from "../assets/skills/nextjs.png";
-import javascript from "../assets/skills/javascript.png";
-import typescript from "../assets/skills/typescript.png";
-import tailwind from "../assets/skills/tailwind.png";
-import jquery from "../assets/skills/jquery.png";
-import sass from "../assets/skills/sass.png";
-import bootstrap from "../assets/skills/bootstrap.png";
-// Backend Skills
-import springboot from "../assets/skills/springboot.png";
-import java from "../assets/skills/java.png";
-import mysql from "../assets/skills/mysql.png";
-import mongodb from "../assets/skills/mongodb.png";
-import firebase from "../assets/skills/firebase.png";
 // UI UX Skills
 import figma from "../assets/skills/figma.png";
 import prototype from "../assets/skills/prototype.png";
@@ -75,17 +60,10 @@ export {
   person1,
   person2,
   person3,
-  reactLogo,
   stars,
   strategy,
   uiUX,
   fullstack,
-  nextjs,
-  javascript,
-  typescript,
-  tailwind,
-  jquery,
-  sass,
   clock,
   gpt3,
   inabox,
@@ -94,12 +72,6 @@ export {
   tenzieGame,
   tictactoe,
   typingGame,
-  bootstrap,
-  springboot,
-  java,
-  mysql,
-  mongodb,
-  firebase,
   figma,
   prototype,
   wireframe,

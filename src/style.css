@@ -129,6 +129,12 @@ p.extra-small {
   line-height: 120%;
 }
 
+.myskill svg {
+  color: var(--secondary-color);
+  width: 30px;
+  height: 30px;
+}
+
 /* ===============
     Button Styling
     ============== */
