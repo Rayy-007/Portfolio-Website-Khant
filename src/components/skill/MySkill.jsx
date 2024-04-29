@@ -182,11 +182,6 @@ const frontendSkills = [
     level: "99%",
   },
   {
-    skill: "Ract Js",
-    image: <SiReact />,
-    level: "99%",
-  },
-  {
     skill: "Next Js",
     image: <SiNextdotjs />,
     level: "80%",

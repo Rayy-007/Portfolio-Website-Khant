@@ -5,7 +5,7 @@ import Header from "./header/Header";
 import MySkill from "./skill/MySkill";
 import AboutMe from "./aboutMe/AboutMe";
 import Project from "./project/Project";
-import Testimonial from "./testimonial/Testimonial";
+import Education from "./education/Education";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 
@@ -15,7 +15,7 @@ export {
   MySkill,
   AboutMe,
   Project,
-  Testimonial,
+  Education,
   Contact,
   Footer,
 };

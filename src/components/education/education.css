@@ -16,6 +16,7 @@
 }
 
 .testimonial .cards {
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(1.5vw + 0.5rem);

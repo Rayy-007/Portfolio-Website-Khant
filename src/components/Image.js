@@ -2,9 +2,6 @@ import aboutMe from "../assets/about-me.png";
 import arrow from "../assets/arrow.svg";
 import github from "../assets/github.png";
 import Me from "../assets/Me-1.png";
-import person1 from "../assets/person1.png";
-import person2 from "../assets/person2.png";
-import person3 from "../assets/person3.png";
 import stars from "../assets/stars.png";
 import stars4 from "../assets/Stars4.png";
 import stars3 from "../assets/Stars3.png";
@@ -57,9 +54,6 @@ export {
   frontDev,
   github,
   Me,
-  person1,
-  person2,
-  person3,
   stars,
   strategy,
   uiUX,

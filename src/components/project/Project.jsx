@@ -40,8 +40,10 @@ function Project() {
           <ScrollAnimation>
             <p className="extra-small">{data.description}</p>
             <div className="languages-con">
-              {data.languages.map((language) => (
-                <div className="language-badge">{language}</div>
+              {data.languages.map((language, index) => (
+                <div key={index} className="language-badge">
+                  {language}
+                </div>
               ))}
             </div>
           </ScrollAnimation>

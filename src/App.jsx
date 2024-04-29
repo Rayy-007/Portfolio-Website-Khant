@@ -5,7 +5,7 @@ import {
   MySkill,
   AboutMe,
   Project,
-  Testimonial,
+  Education,
   Contact,
   Footer,
 } from "./components/index";
@@ -22,7 +22,7 @@ function App() {
         <AboutMe />
         <Project />
       </div>
-      <Testimonial />
+      <Education />
       <div className="normal-bg">
         <Contact />
       </div>
