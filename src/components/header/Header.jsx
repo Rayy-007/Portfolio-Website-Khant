@@ -60,8 +60,8 @@ function Header() {
                 </a>
                 <a
                   className="btn btn-outline"
-                  href="/Resume-Min-Khant.pdf"
-                  download="Min_Khant_Resume.pdf"
+                  href="/MinKhant-Professional-Resume.pdf"
+                  download="Min_Khant_Professional_Resume.pdf"
                 >
                   Download Resume
                 </a>
