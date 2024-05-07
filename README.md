@@ -15,6 +15,8 @@ bringing a Figma Community design to life. Here's a bit about what you'll find:
 - Vite
 - HTML, CSS
 - Figma (for design inspiration)
+- Framer Motion (for animation)
+- Formspree (for sending mail)
   
 Website Link ----> https://portfolio-khant.netlify.app/
 
