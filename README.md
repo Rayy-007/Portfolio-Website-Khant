@@ -18,6 +18,3 @@ bringing a Figma Community design to life. Here's a bit about what you'll find:
   
 Website Link ----> https://portfolio-khant.netlify.app/
 
-<!-- 
-Here is the Figma Design ----> https://www.figma.com/community/file/1144519064091466465/personal-portfolio-website
- -->
