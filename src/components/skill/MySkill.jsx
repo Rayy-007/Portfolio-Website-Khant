@@ -7,9 +7,11 @@ import {
   prototype,
   wireframe,
   fullstack,
+  strategy,
+  wordpress
 } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
-import { FaJava, FaNpm } from "react-icons/fa";
+import { FaJava, FaNpm, FaPhp, FaNetworkWired } from "react-icons/fa";
 import {
   SiBootstrap,
   SiBun,
@@ -29,7 +31,11 @@ import {
   SiVite,
   SiWebpack,
   SiWordpress,
+  SiPostman,
+  SiJson,
+  SiCpanel,
 } from "react-icons/si";
+import { FaShop } from "react-icons/fa6";
 
 function MySkill() {
   // Creating Cards with skills data
@@ -41,10 +47,10 @@ function MySkill() {
         </ScrollAnimation>
       </div>
       <ScrollAnimation>
-        <h3>{data.skill}</h3>
+        <h4>{data.skill}</h4>
       </ScrollAnimation>
       <ScrollAnimation>
-        <p>{data.description}</p>
+        <p className="extra-small">{data.description}</p>
       </ScrollAnimation>
     </div>
   ));
@@ -124,25 +130,25 @@ function MySkill() {
         <div className="skills-con flex-row">{developerSkillsCards}</div>
         <div className="small">
           <ScrollAnimation>
-            <h4>Frontend Skills</h4>
+            <h3>Frontend Skills</h3>
           </ScrollAnimation>
           <div className="skills-con flex-row">{fronendSkillsCards}</div>
         </div>
         <div className="small">
           <ScrollAnimation>
-            <h4>UIUX Skills</h4>
+            <h3>UIUX Skills</h3>
           </ScrollAnimation>
           <div className="skills-con flex-row">{uiuxSkillsCards}</div>
         </div>
         <div className="small">
           <ScrollAnimation>
-            <h4>Backend Skills</h4>
+            <h3>Backend Skills</h3>
           </ScrollAnimation>
           <div className="skills-con flex-row">{backendSkillsCards}</div>
         </div>
         <div className="small">
           <ScrollAnimation>
-            <h4>Development Tools</h4>
+            <h3>Development Tools</h3>
           </ScrollAnimation>
           <div className="skills-con flex-row">{toolsSkillsCards}</div>
         </div>
@@ -158,22 +164,55 @@ const developerSkills = [
   {
     skill: "Full Stack Development",
     description:
-      "I enjoy 🤗 the challenge of crafting both front-end and back-end solutions to create seamless website experiences.",
+      "I build complete, end-to-end web solutions that connect modern front-end interfaces with efficient and scalable back-end systems. My focus is on performance, security, and creating seamless user experiences.",
     image: fullstack,
   },
   {
     skill: "Front End Development",
     description:
-      "Proficient in front-end development 🚀, I specialize in crafting engaging and responsive user interfaces.",
+      "I specialize in building responsive, accessible, and visually appealing interfaces that work smoothly across all devices while maintaining clean and optimized code.",
     image: frontDev,
   },
   {
     skill: "UI & UX Design",
     description:
-      "I'm excited 🤩 about opportunities that allow me to bring creativity and user-centric design to the forefront.",
+      "I blend creativity with usability to design clean, intuitive, and user-focused interfaces that align with both user goals and business needs.",
     image: uiUX,
   },
+  {
+    skill: "WordPress Development",
+    description:
+      "I develop and customize WordPress websites from themes to plugins, focusing on performance, SEO optimization, and scalable design for long-term growth.",
+    image: wordpress,
+  },
+  {
+    skill: "CRM Development",
+    description:
+      "I customize and extend SugarCRM to meet business requirements, creating custom APIs, workflows, and UI modifications that improve efficiency and data management.",
+    image: strategy,
+  },
 ];
+
+// const developerSkills = [
+//   {
+//     skill: "Full Stack Development",
+//     description:
+//       "I enjoy 🤗 the challenge of crafting both front-end and back-end solutions to create seamless website experiences.",
+//     image: fullstack,
+//   },
+//   {
+//     skill: "Front End Development",
+//     description:
+//       "Proficient in front-end development 🚀, I specialize in crafting engaging and responsive user interfaces.",
+//     image: frontDev,
+//   },
+//   {
+//     skill: "UI & UX Design",
+//     description:
+//       "I'm excited 🤩 about opportunities that allow me to bring creativity and user-centric design to the forefront.",
+//     image: uiUX,
+//   },
+// ];
 
 const frontendSkills = [
   {
@@ -243,6 +282,11 @@ const backendSkills = [
     level: "80%",
   },
   {
+    skill: "PHP",
+    image: <FaPhp />,
+    level: "60%",
+  },
+  {
     skill: "Mysql",
     image: <SiMysql />,
     level: "80%",
@@ -257,6 +301,16 @@ const backendSkills = [
     image: <SiMongodb />,
     level: "70%",
   },
+  {
+    skill: "REST APIs",
+    image: <FaNetworkWired />,
+    level: "80%",
+  },
+  {
+    skill: "JSON",
+    image: <SiJson />,
+    level: "80%",
+  },
 ];
 
 const tools = [
@@ -264,6 +318,11 @@ const tools = [
     skill: "Git & GitHub",
     image: <SiGit />,
     level: "90%",
+  },
+  {
+    skill: "Postman",
+    image: <SiPostman />,
+    level: "80%",
   },
   {
     skill: "Netlify",
@@ -298,6 +357,16 @@ const tools = [
   {
     skill: "Wordpress",
     image: <SiWordpress />,
+    level: "80%",
+  },
+  {
+    skill: "cPanel & FTP",
+    image: <SiCpanel />,
+    level: "80%",
+  },
+  {
+    skill: "eCommerce",
+    image: <FaShop />,
     level: "80%",
   },
 ];

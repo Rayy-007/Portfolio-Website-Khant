@@ -11,6 +11,7 @@ import frontDev from "../assets/frontend-dev.png";
 import strategy from "../assets/strategy.png";
 import uiUX from "../assets/ui-ux.png";
 import fullstack from "../assets/skills/fullstack.png";
+import wordpress from "../assets/skills/wordpress.png";
 // UI UX Skills
 import figma from "../assets/skills/figma.png";
 import prototype from "../assets/skills/prototype.png";
@@ -89,4 +90,5 @@ export {
   Yadanabon,
   stars3,
   stars4,
+  wordpress,
 };

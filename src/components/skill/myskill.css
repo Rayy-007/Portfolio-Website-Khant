@@ -27,13 +27,13 @@
 }
 
 .small .skill-card {
-  flex-basis: 120px;
+  flex-basis: 200px;
 }
 
 .skill-card {
   position: relative;
   flex: 1;
-  flex-basis: 210px;
+  flex-basis: 350px;
 
   align-items: flex-start;
   justify-content: space-between;
