@@ -287,7 +287,7 @@ const backendSkills = [
     level: "60%",
   },
   {
-    skill: "Mysql",
+    skill: "MySQL",
     image: <SiMysql />,
     level: "80%",
   },
