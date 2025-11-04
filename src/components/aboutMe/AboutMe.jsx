@@ -23,27 +23,34 @@ function AboutMe() {
         <div className="description">
           <ScrollAnimation>
             <p>
-              Hey, I'm Min Khant, a <AgeCounter /> software engineer from
-              Mandalay, Myanmar. Currently pursuing a Pearson Level 5 Higher
-              National Diploma in Computer Sciences at EduCLaaS Academy, Lithan
-              University, I'm on a journey to transform ideas into digital
+              Hey, I'm Min Khant, a <AgeCounter /> software engineer with two years of
+              experience specializing in full-stack development,
+              WordPress, and CRM customization.
               experiences.
             </p>
           </ScrollAnimation>
           <p className="extra-small">
             <ScrollAnimation>
               <li>
+                🎯 Successfully delivered 14+ projects (including 7 built from
+                scratch and over 7 focused on maintenance/improvement),
+                building responsive websites, integrating custom APIs, and
+                optimizing CRM workflows. 
+              </li>
+            </ScrollAnimation>
+            {/* <ScrollAnimation>
+              <li>
                 🚀 Proficient in ReactJS, NextJs, TypeScirpt, JavaScript,
                 Tailwind, Bootstrap, jQuery, REST APIs, Firebase, Java, MySQL,
                 MongoDb
               </li>
-            </ScrollAnimation>
-            <ScrollAnimation>
+            </ScrollAnimation> */}
+            {/* <ScrollAnimation>
               <li>
                 💻 Skilled in creating stunning UI/UX design and developing
                 fully responsive website
               </li>
-            </ScrollAnimation>
+            </ScrollAnimation> */}
             <ScrollAnimation>
               <li>
                 🌟 Beyond the code, I'm a dedicated professional thriving in
@@ -80,3 +87,11 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
+//  <p>
+//   Hey, I'm Min Khant, a <AgeCounter /> software engineer from
+//   Mandalay, Myanmar. Currently pursuing a Pearson Level 5 Higher
+//   National Diploma in Computer Sciences at EduCLaaS Academy, Lithan
+//   University, I'm on a journey to transform ideas into digital
+//   experiences.
+// </p>
