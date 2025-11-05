@@ -35,6 +35,16 @@ export const projectsData = [
     languages: ["React", "QuizAPI"],
   },
   {
+    title: "React Quizzical App",
+    description:
+      "🤹‍♀️Quizzical App is a dynamic React application that challenges users with a variety of quizzes sourced from an external quiz API.",
+    codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+    websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    image: quizzical,
+    type: "app",
+    languages: ["React", "QuizAPI"],
+  },
+  {
     title: "NextJs Ecommerce",
     description:
       "🛒Ecommerce with accurate functionality such as add to cart, checkout",
