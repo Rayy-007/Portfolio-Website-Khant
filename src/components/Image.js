@@ -18,6 +18,10 @@ import prototype from "../assets/skills/prototype.png";
 import wireframe from "../assets/skills/wireframe.png";
 
 // Projects
+// Project Bhea
+import opennet from "../assets/projects/opennet.png";
+
+// Project Websites
 import dobu from "../assets/projects/dobu.png";
 import dashboard from "../assets/projects/dashboard.png";
 import ecommerce from "../assets/projects/ecommerce.png";
@@ -91,4 +95,5 @@ export {
   stars3,
   stars4,
   wordpress,
+  opennet
 };

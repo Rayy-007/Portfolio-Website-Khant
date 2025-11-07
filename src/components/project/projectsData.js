@@ -20,14 +20,25 @@ import {
   droneUIUX,
   movieUIUX,
   portfolioUIUX,
+  opennet
 } from "../Image";
 
 // Projects Data for Projects Card
 export const projectsData = [
   {
+    title: "OpenNets — Event Management Platform",
+    description:
+      "📅Led full design and development, including logo creation and website setup. Built an engaging event-focused experience optimized for clarity and speed.",
+    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    image: opennet,
+    type: "website",
+    languages: ["WordPress", "UI Design", "Event Management"],
+  },
+  {
     title: "React Quizzical App",
     description:
-      "🤹‍♀️Quizzical App is a dynamic React application that challenges users with a variety of quizzes sourced from an external quiz API.",
+      "🤹Quizzical App is a dynamic React application that challenges users with a variety of quizzes sourced from an external quiz API.",
     codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
     websiteURL: "https://react-quizzical-app-khant.netlify.app/",
     image: quizzical,
