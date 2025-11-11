@@ -20,6 +20,15 @@ import wireframe from "../assets/skills/wireframe.png";
 // Projects
 // Project Bhea
 import opennet from "../assets/projects/bhea/opennet.png";
+import bethingliving from "../assets/projects/bhea/bethingliving.png";
+import bheaBlog from "../assets/projects/bhea/bhea-blog-min-khant-portfolio.png";
+import bheaIntegration from "../assets/projects/bhea/bhea-integration-min-khant-portfolio.png";
+import blissgrow from "../assets/projects/bhea/blissgrow-min-khant-portfolio.png";
+import parichaya from "../assets/projects/bhea/parichaya-min-khant-portfolio.png";
+import opreact82ennet from "../assets/projects/bhea/react82-min-khant-portfolio.png";
+import samosachai from "../assets/projects/bhea/samosachai-min-khant-portfolio.png";
+import sriraksha from "../assets/projects/bhea/sriraksha-min-khant-portfolio.png";
+import yenrich from "../assets/projects/bhea/yenrich-min-khant-portfolio.png";
 
 // Project Websites
 import dobu from "../assets/projects/dobu.png";
@@ -95,5 +104,14 @@ export {
   stars3,
   stars4,
   wordpress,
-  opennet
+  opennet,
+  bethingliving,
+  bheaBlog,
+  bheaIntegration,
+  blissgrow,
+  parichaya,
+  opreact82ennet,
+  samosachai,
+  sriraksha,
+  yenrich
 };
