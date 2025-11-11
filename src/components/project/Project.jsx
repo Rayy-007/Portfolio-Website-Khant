@@ -67,9 +67,10 @@ function Project() {
 
   const calculateTabMoverPosition = () => {
     if (projectTabMenu === "all") return "0%";
-    if (projectTabMenu === "website") return "25%";
-    if (projectTabMenu === "app") return "50%";
-    if (projectTabMenu === "uiux") return "75%";
+    if (projectTabMenu === "bhea") return "20%";
+    if (projectTabMenu === "website") return "40%";
+    if (projectTabMenu === "app") return "60%";
+    if (projectTabMenu === "uiux") return "80%";
     return "0%";
   };
 
@@ -107,6 +108,12 @@ function Project() {
             onClick={() => setProjectTabMenu("all")}
           >
             All
+          </li>
+          <li
+            className={projectTabMenu === "bhea" ? "active" : ""}
+            onClick={() => setProjectTabMenu("bhea")}
+          >
+            Projects
           </li>
           <li
             className={projectTabMenu === "website" ? "active" : ""}

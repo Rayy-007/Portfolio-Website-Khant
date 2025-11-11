@@ -143,7 +143,7 @@
     Project Tab Menu
     ================== */
 .project-tab {
-  width: min(530px, 100%);
+  width: min(580px, 100%);
 }
 
 .project-tab ul {
@@ -161,7 +161,7 @@
 
 .project-tab ul li {
   text-align: center;
-  width: 25%;
+  width: 20%;
   padding: 10px 30px;
   font-size: var(--basic-font-size);
   cursor: pointer;
@@ -172,7 +172,8 @@
 .tab-mover {
   position: absolute;
   height: 100%;
-  width: 25%;
+  width: 21%;
+  flex: 1;
   background-color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }

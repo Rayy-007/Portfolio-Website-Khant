@@ -19,7 +19,7 @@ import wireframe from "../assets/skills/wireframe.png";
 
 // Projects
 // Project Bhea
-import opennet from "../assets/projects/opennet.png";
+import opennet from "../assets/projects/bhea/opennet.png";
 
 // Project Websites
 import dobu from "../assets/projects/dobu.png";

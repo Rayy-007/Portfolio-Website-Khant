@@ -32,7 +32,7 @@ export const projectsData = [
     // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
     // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
     image: opennet,
-    type: "website",
+    type: "bhea",
     languages: ["WordPress", "UI Design", "Event Management"],
   },
   {
