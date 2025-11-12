@@ -25,7 +25,7 @@ import bheaBlog from "../assets/projects/bhea/bhea-blog-min-khant-portfolio.png"
 import bheaIntegration from "../assets/projects/bhea/bhea-integration-min-khant-portfolio.png";
 import blissgrow from "../assets/projects/bhea/blissgrow-min-khant-portfolio.png";
 import parichaya from "../assets/projects/bhea/parichaya-min-khant-portfolio.png";
-import opreact82ennet from "../assets/projects/bhea/react82-min-khant-portfolio.png";
+import rect82 from "../assets/projects/bhea/rect82-min-khant-portfolio.png";
 import samosachai from "../assets/projects/bhea/samosachai-min-khant-portfolio.png";
 import sriraksha from "../assets/projects/bhea/sriraksha-min-khant-portfolio.png";
 import yenrich from "../assets/projects/bhea/yenrich-min-khant-portfolio.png";
@@ -110,7 +110,7 @@ export {
   bheaIntegration,
   blissgrow,
   parichaya,
-  opreact82ennet,
+  rect82,
   samosachai,
   sriraksha,
   yenrich
