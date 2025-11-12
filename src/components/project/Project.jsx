@@ -7,7 +7,7 @@ import { projectsData } from "./projectsData";
 
 function Project() {
   const [projectTabMenu, setProjectTabMenu] = useState("all");
-  const [visibleProjects, setVisibleProjects] = useState(6);
+  const [visibleProjects, setVisibleProjects] = useState(9);
   const [loading, setLoading] = useState(false);
   const projectSectionRef = useRef(null);
 
@@ -49,16 +49,22 @@ function Project() {
           </ScrollAnimation>
           {data.type !== "uiux" && (
             <div className="view-con">
-              <a href={data.codeUrl} target="_blank" className="view  flex-row">
+              {
+                data.codeUrl && 
+                <a href={data.codeUrl} target="_blank" className="view  flex-row">
                 View Sourcecode <img src={arrow} alt="Arrow" />
               </a>
-              <a
+              }
+              {
+                data.websiteURL && 
+                <a
                 href={data.websiteURL}
                 target="_blank"
                 className="view  flex-row"
-              >
-                View Website <img src={arrow} alt="Arrow" />
-              </a>
+                >
+                  View Website <img src={arrow} alt="Arrow" />
+                </a>
+              }
             </div>
           )}
         </div>
