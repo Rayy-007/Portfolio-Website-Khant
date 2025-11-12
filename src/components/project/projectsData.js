@@ -38,8 +38,7 @@ export const projectsData = [
     title: "OpenNets — Event Management Platform",
     description:
       "📅Led full design and development, including logo creation and website setup. Built an engaging event-focused experience optimized for clarity and speed.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.opennets.com/",
     image: opennet,
     type: "bhea",
     languages: ["WordPress", "UI Design", "Event Management"],
@@ -48,8 +47,7 @@ export const projectsData = [
     title: "Bhea - Corporate Management Website",
     description: 
       "Handled maintenance tasks such as lead tracking, new page development, email system fixes and payment gateway integration. Improved overall reliability and visual consistency.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.bhea.com/",
     image: bheaIntegration,
     type: "bhea",
     languages: ["WordPress", "Maintenance", "Troubleshooting", "Integration"],
@@ -58,8 +56,7 @@ export const projectsData = [
     title: "Samosachai - Event Management Website",
     description:
       "📅Designed and developed a complete event management website integrating smooth navigation and modern design principles to enhance brand presence.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.samosach.ai/",
     image: samosachai,
     type: "bhea",
     languages: ["WordPress", "UI Design", "Event Management"],
@@ -68,8 +65,7 @@ export const projectsData = [
     title: "Bhea - Corporate Blog Management",
     description:
       "Enhanced blog usability and visual hierarchy for better readability and engagement. Managed content flow and styling.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.bhea.com/blog/",
     image: bheaBlog,
     type: "bhea",
     languages: ["WordPress", "Content Management", "UI/UX Enhancement"],
@@ -78,8 +74,6 @@ export const projectsData = [
     title: "Rect82 - Education Platform for Girl Child",
     description:
       "📅Designed and developed a meaningful education‌al charity website aimed at empowering girls. Integrated donation form and overall process.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
     image: rect82,
     type: "bhea",
     languages: ["WordPress", "UI Design", "Integration"],
@@ -88,8 +82,7 @@ export const projectsData = [
     title: "BlissGrow - E-Commerce Product Website",
     description:
     "Enhanced user experience by improving checkout flow and updating product listings. Focused on creating a smoother, modern shopping experience.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.blissgrow.in/",
     image: blissgrow,
     type: "bhea",
     languages: ["WordPress", "UI/UX Optimization", "WooCommerce"],
@@ -98,8 +91,7 @@ export const projectsData = [
     title: "Yenrich - E-Commerce Platform",
     description:
       "Developed a full-featured e-commerce site from scratch, focusing on user-friendly product navigation and seamless checkout experience.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.yenrich.in/",
     image: yenrich,
     type: "bhea",
     languages: ["WordPress", "UI Design", "WooCommerce"],
@@ -108,8 +100,7 @@ export const projectsData = [
     title: "Sriraksha - Construction Company Website",
     description:
       "Updated design components to modernize look and feel while maintaining brand consistency. Integrated event management system.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://www.sriraksha.co.in/",
     image: sriraksha,
     type: "bhea",
     languages: ["WordPress", "Maintenance", "Event Management"],
@@ -118,8 +109,7 @@ export const projectsData = [
     title: "Parichaya - Dating Platform",
     description:
       "Implemented secure Login/Register and user management features for a dating web application.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://parichaya.co/",
     image: parichaya,
     type: "bhea",
     languages: ["WordPress", "User Authentication", "User Management"],
@@ -128,8 +118,7 @@ export const projectsData = [
     title: "BethLiving - Interior Blog Page Development",
     description:
       "Designed and implemented a complete blog system to support marketing content for Beth Living’s main website.",
-    // codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
-    // websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    websiteURL: "https://bethliving.com/blog/",
     image: bethingliving,
     type: "bhea",
     languages: ["WordPress", "UI Design", "Event Management"],
