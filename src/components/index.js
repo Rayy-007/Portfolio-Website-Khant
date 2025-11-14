@@ -8,6 +8,7 @@ import Project from "./project/Project";
 import Education from "./education/Education";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
+import Hero from "./Hero/Hero";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Education,
   Contact,
   Footer,
+  Hero,
 };

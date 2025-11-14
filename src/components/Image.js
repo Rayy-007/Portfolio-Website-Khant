@@ -62,6 +62,10 @@ import Scrimba from "../assets/education/scrimba.png";
 import Lithan from "../assets/education/lithan.jpeg";
 import Yadanabon from "../assets/education/yadanabon.png";
 
+// Hero
+import minKhantImage from '../assets/hero/min-khant.png';
+import shadow from '../assets/hero/shadow.png';
+
 export {
   aboutMe,
   arrow,
@@ -113,5 +117,7 @@ export {
   rect82,
   samosachai,
   sriraksha,
-  yenrich
+  yenrich,
+  minKhantImage,
+  shadow
 };

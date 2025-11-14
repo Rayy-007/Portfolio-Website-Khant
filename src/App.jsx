@@ -8,6 +8,7 @@ import {
   Education,
   Contact,
   Footer,
+  Hero,
 } from "./components/index";
 import { useTheme } from "./components/utils/ThemeProvider";
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div data-theme={theme === "light" ? "light" : "dark"}>
       <Navbar />
+      <Hero />
       <Header />
       <div className="normal-bg">
         <MySkill />

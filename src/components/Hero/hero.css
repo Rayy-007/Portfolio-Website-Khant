@@ -1,0 +1,27 @@
+.hero-con {
+  /* background-image: url('../../assets/hero/background.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a1625;
+
+  height: 83vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    position: relative;
+}
+
+.hero-img {
+    width: 397px;
+    position: absolute;
+}
+
+.shadow {
+    position: absolute;
+    
+    bottom: 0;
+    width: 100%;
+}
