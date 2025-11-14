@@ -89,8 +89,9 @@ function Project() {
       <div className="top flex-row">
         <div className="title flex-col">
           <ScrollAnimation extraAnimation={true}>
-            <h4>Recent Projects</h4>
-            <h2>My Projects</h2>
+            <h4>Projects</h4>
+            <h2>My Experiences & Projects</h2>
+            <p className="extra-small">Successfully built and launched 10+ complete websites across diverse industries.</p>
           </ScrollAnimation>
         </div>
         <a
