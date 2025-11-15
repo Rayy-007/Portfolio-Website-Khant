@@ -65,6 +65,11 @@ import Yadanabon from "../assets/education/yadanabon.png";
 // Hero
 import minKhantImage from '../assets/hero/min-khant.png';
 import shadow from '../assets/hero/shadow.png';
+import blurBackground from '../assets/hero/blur-background.png';
+import pillarShape from '../assets/hero/pillar-shape.png';
+import textBox from '../assets/hero/text-box.png';
+import arrowShape from '../assets/hero/arrow.png';
+import pillarShapteLight from '../assets/hero/pillar-shape-light.png';
 
 export {
   aboutMe,
@@ -119,5 +124,10 @@ export {
   sriraksha,
   yenrich,
   minKhantImage,
-  shadow
+  shadow,
+  blurBackground,
+  pillarShape,
+  textBox,
+  arrowShape,
+  pillarShapteLight
 };

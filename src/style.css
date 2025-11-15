@@ -29,6 +29,9 @@
 
   /* Section Flex Gap */
   --gap: calc(3vw + 1rem);
+
+  /* For Hero Section Only
+  --hero-bg: #f5fcff */
 }
 
 [data-theme="dark"] {
@@ -37,6 +40,8 @@
   --heading-color: #fafafa;
   --white-color: #121212;
   --box-shadow-color: rgba(44, 32, 75, 0.801);
+  /* For Hero Section Only */
+  /* --hero-bg: #1a1625; */
 }
 
 /* =================== 
@@ -299,10 +304,27 @@ Primary Button
   transform: translateX(24px);
 }
 
+
+/* Hero an Header Section Visibility */
+.Hero {
+  display: block;
+}
+
+.header {
+  display: none;
+}
+
 /* =============
     Responsive 
     ============ */
 @media screen and (max-width: 990px) {
+  .Hero {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+
   .section-padding-1 {
     padding: 60px 0px;
   }

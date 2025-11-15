@@ -17,7 +17,7 @@ function App() {
   return (
     <div data-theme={theme === "light" ? "light" : "dark"}>
       <Navbar />
-      <Hero />
+      <Hero theme={theme} />
       <Header />
       <div className="normal-bg">
         <MySkill />

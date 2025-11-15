@@ -1,27 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.Hero {
+    width: 100%;
+}
+
 .hero-con {
-  /* background-image: url('../../assets/hero/background.png'); */
+  background-image: url('../../assets/hero/blur-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #1a1625;
-
-  height: 83vh;
-
+  /* background-color: #1a1625; */
+  
+  
+  height: 91vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  position: relative;
+}
 
+/* ----- Middle Part Elements ----- */
+.mid-con {
+    background-color: var(--bg-color);
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-title, .hero-small-title, h4.software, h4.frontend {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--heading-color);
+}
+
+.hero-small-title {
+    position: absolute;
+    top: 7%;
+    letter-spacing: 20px;
+    letter-spacing: 20px;
+    z-index: 11;
+}
+
+.hero-title {
+    position: absolute;
+    top: 5%;
+    font-size: 300px;
+    letter-spacing: -9px;
+    z-index: 11;
 }
 
 .hero-img {
-    width: 397px;
-    position: absolute;
+    width: 435px;
+    z-index: 22;
+    bottom: 0;
+    position: sticky;
 }
 
+.arrow {
+    position: absolute;
+    /* z-index: -1; */
+    width: 200px;
+    left: 30%;
+    top:55%;
+    color: var(--heading-color);
+
+}
+
+.software, .frontend {
+    position: absolute;
+    color: #f4f1ef;
+    width: 100px;
+    line-height: 20px;
+    font-size: 25px;
+}
+
+.software {
+    left: 30%;
+    top: 75%;
+}
+
+.frontend {
+    right: 30%;
+    top: 80%;
+}
+
+/* ----- Other Elements ----- */
 .shadow {
     position: absolute;
     
     bottom: 0;
     width: 100%;
+    z-index: 33;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 10px;
+    /* width: 70%; */
+    width: 900px;
+    z-index: 44;
+}
+
+.pillars {
+    position: absolute;
+    width: 100%;
+}
+
+/* --- Hero CTA --- */
+
+.Hero .flex-col {
+    gap: 20px;
+    position: relative;
+}
+
+.Hero .flex-col .objective {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.Hero .flex-col p {
+    text-align: center;
+}
+
+.Hero .flex-col .reach-me-home {
+    justify-content: center;
+}
+
+.shadow.bottom {
+    width: 100%;
+    top: 0;
+    z-index: -33;
+    transform: scaleY(-1);
 }
