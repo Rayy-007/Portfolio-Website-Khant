@@ -70,6 +70,11 @@ import pillarShape from '../assets/hero/pillar-shape.png';
 import textBox from '../assets/hero/text-box.png';
 import arrowShape from '../assets/hero/arrow.png';
 import pillarShapteLight from '../assets/hero/pillar-shape-light.png';
+import aboutMK from '../assets/hero/about-me-minkhant.png';
+import aboutMKFrame from '../assets/hero/about-me-minkhant-frame.png';
+import aboutMKLaptopFrame from '../assets/hero/about-me-minkhant-laptop-frame.png';
+import aboutMKLaptopFrameCrop from '../assets/hero/about-me-minkhant-laptop-frame-crop.png';
+import aboutMKFrameCrop from '../assets/hero/about-me-minkhant-frame-crop.png';
 
 export {
   aboutMe,
@@ -129,5 +134,10 @@ export {
   pillarShape,
   textBox,
   arrowShape,
-  pillarShapteLight
+  pillarShapteLight,
+  aboutMK,
+  aboutMKFrame,
+  aboutMKLaptopFrame,
+  aboutMKFrameCrop,
+  aboutMKLaptopFrameCrop
 };

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .Hero {
     width: 100%;
+    background-color: var(--bg-color);
 }
 
 .hero-con {
@@ -8,11 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: #1a1625; */
-  
-  
   height: 91vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +19,6 @@
 
 /* ----- Middle Part Elements ----- */
 .mid-con {
-    background-color: var(--bg-color);
     position: relative;
     width: 100%;
     display: flex;
@@ -110,7 +106,6 @@
 }
 
 /* --- Hero CTA --- */
-
 .Hero .flex-col {
     gap: 20px;
     position: relative;

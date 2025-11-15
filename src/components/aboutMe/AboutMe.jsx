@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutme.css";
-import { aboutMe } from "../Image";
+import { aboutMe, aboutMK, aboutMKFrame, aboutMKLaptopFrame , aboutMKFrameCrop, aboutMKLaptopFrameCrop } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
 import AgeCounter from "./AgeCounter";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -10,7 +10,7 @@ function AboutMe() {
     <div id="AboutMe" className="about flex-row container section-padding-1">
       <div className="about__img flex-row">
         <ScrollAnimation>
-          <img src={aboutMe} alt="Photo of Me" />
+          <img src={aboutMKFrameCrop} alt="Photo of Me - Min Khant" />
         </ScrollAnimation>
       </div>
 
@@ -22,7 +22,7 @@ function AboutMe() {
 
         <div className="description">
           <ScrollAnimation>
-            <p>
+            <p className="about-desc">
               Hey, I'm Min Khant, a <AgeCounter /> software engineer with two years of
               experience specializing in full-stack development,
               WordPress, and CRM customization.

@@ -11,6 +11,11 @@
 
 .about__content p {
   margin-top: 1.2em;
+  /* color: */
+}
+
+.about__content p span {
+  color: var(--secondary-color);
 }
 
 .about__img {
@@ -19,7 +24,8 @@
 }
 
 .about .about__img img {
-  max-width: 90%;
+  max-width: 100%;
+  border-radius: 20px;
 }
 
 .about__content li {
@@ -31,6 +37,26 @@
   margin-top: 40px;
   display: flex;
   gap: 15px;
+}
+
+.cta-about .btn.btn-primary, .cta-about .btn.btn-outline{
+  border-color:  var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+}
+
+.cta-about .btn.btn.btn-primary::before, .cta-about .btn.btn-outline::before {
+  background-color: var(--secondary-color);
+}
+
+.cta-about .btn.btn-primary:hover {
+  color: var(--secondary-color);
+}
+
+.cta-about .btn.btn-outline {
+  color: var(--secondary-color);
+}
+.cta-about .btn.btn-outline:hover {
+  color: #ffffff;
 }
 
 .more-about {
