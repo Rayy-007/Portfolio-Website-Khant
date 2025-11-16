@@ -3,18 +3,82 @@ import './hero.css';
 import ScrollAnimation from "../utils/ScrollAnimation";
 import { FaViber } from "react-icons/fa";
 import { ImMail4 } from "react-icons/im";
+import SplitText from "./SplitText";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
-export default function DeveloperIntro({theme}) {
+
+export default function Hero({theme}) {
+    const softwareRef = useRef(null);
+    const frontendRef = useRef(null);
+    const smallTitleRef = useRef(null);
+    const meRef = useRef(null);
+    const textBoxRef = useRef(null);
+    const arrowRef = useRef(null);
+
+    useEffect(() => {
+      gsap.fromTo(
+        softwareRef.current,
+        { x: 100, opacity: 0 },  
+        { x: 0, opacity: 1, duration: 2, ease: "power3.out" }
+      );
+
+      gsap.fromTo(
+        frontendRef.current,
+        { x: -100, opacity: 0 },    
+        { x: 0, opacity: 1, duration: 2, ease: "power3.out", delay: 0.2 }
+      );
+
+      gsap.fromTo(
+        smallTitleRef.current,
+        { y: -100, opacity: 0 },    
+        { y: 0, opacity: 1, duration: 1.5, ease: "power3.out", delay: 0.2 }
+      );
+
+      gsap.fromTo(
+        meRef.current,
+        { y: 100, opacity: 0.8, scale: 0.8, filter: "blur(8px)" },    
+        { y: 0, opacity: 1, duration: 0.8, scale: 1, filter: "blur(0px)", ease: "power3.out", delay: 0.2 }
+      );
+
+      gsap.fromTo(
+        textBoxRef.current,
+        { y: 100, opacity: 0 },    
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.2 }
+      );
+
+      gsap.fromTo(
+        arrowRef.current,
+        { x: 100, opacity: 0 },    
+        { x: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.2 }
+      );
+    }, []);
+
   return (
     <div id="Home" className="Hero">
       <section  className="hero-con section-padding-1">
 
           <div className="mid-con">
-            <h3 className="hero-small-title">IAM</h3>
-            <h1 className="hero-title">MIN KHANT</h1>
-            <img className="hero-img" src={minKhantImage}  alt="Photo of Min Khant" />
+            <h3 ref={smallTitleRef} className="hero-small-title">IAM</h3>
+            {/* <h1 className="hero-title">MIN KHANT</h1> */}
+            <SplitText
+              text="MIN KHANT"
+              className=" hero-title text-2xl font-semibold text-center"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+
+            <img ref={meRef} className="hero-img" src={minKhantImage}  alt="Photo of Min Khant" />
             {/* <img className="arrow" src={arrowShape} alt="Arrow Shape" /> */}
             <svg
+                ref={arrowRef}
                 className="arrow"
                 width="120"
                 height="120"
@@ -38,8 +102,8 @@ export default function DeveloperIntro({theme}) {
                   stroke-linejoin="round"
                 />
             </svg>
-            <h4 className="software">Software Engineer</h4>
-            <h4 className="frontend">Frontend Developer</h4>
+            <h4 ref={softwareRef} className="software">Software Engineer</h4>
+            <h4 ref={frontendRef}  className="frontend">Frontend Developer</h4>
             <img className="shadow" src={shadow} alt="Shadow" />  
           </div>
             {
@@ -48,7 +112,7 @@ export default function DeveloperIntro({theme}) {
                 <img className="pillars" src={pillarShapteLight} alt="Pillar Shape" />
               }
               {/* <img className="pillars" src={pillarShapteLight} alt="Pillar Shape" /> */}
-            <img className="text-box" src={textBox} alt="Meet the developer - Min Khant" />
+            <img ref={textBoxRef} className="text-box" src={textBox} alt="Meet the developer - Min Khant" />
       </section>
       <section className="hero-cta flex-col section-padding-1 ">
           {/* <img className="shadow bottom" src={shadow} alt="Shadow" /> */}
