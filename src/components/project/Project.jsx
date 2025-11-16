@@ -14,7 +14,7 @@ function Project() {
   const handleLoadMore = () => {
     setLoading(true);
     setTimeout(() => {
-      setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3);
+      setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6);
       setLoading(false);
     }, 800);
   };
