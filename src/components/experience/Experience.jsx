@@ -4,7 +4,7 @@ import ScrollAnimation from "../utils/ScrollAnimation";
 export default function Experience() {
 
   return (
-    <section id="Experience" className="experience flex-col container section-padding-2">
+    <section id="Experience" className="experience flex-col container ">
         <div className="title">
           <ScrollAnimation extraAnimation={true}>
             <h4>My Experience</h4>

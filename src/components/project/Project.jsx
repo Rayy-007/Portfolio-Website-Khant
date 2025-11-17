@@ -4,6 +4,7 @@ import "./project.css";
 import { github, arrow } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
 import { projectsData } from "./projectsData";
+import FeaturedProject from "./FeaturedProject";
 
 function Project() {
   const [projectTabMenu, setProjectTabMenu] = useState("all");
@@ -103,6 +104,8 @@ function Project() {
           <p className="extra-small"> Visit My GitHub</p>
         </a>
       </div>
+
+      <FeaturedProject />
 
       <div className="project-tab">
         <ul>

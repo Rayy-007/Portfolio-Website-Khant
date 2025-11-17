@@ -29,6 +29,7 @@ import rect82 from "../assets/projects/bhea/rect82-min-khant-portfolio.png";
 import samosachai from "../assets/projects/bhea/samosachai-min-khant-portfolio.png";
 import sriraksha from "../assets/projects/bhea/sriraksha-min-khant-portfolio.png";
 import yenrich from "../assets/projects/bhea/yenrich-min-khant-portfolio.png";
+import rhea from "../assets/projects/bhea/rhea-project.png";
 
 // Project Websites
 import dobu from "../assets/projects/dobu.png";
@@ -139,5 +140,6 @@ export {
   aboutMKFrame,
   aboutMKLaptopFrame,
   aboutMKFrameCrop,
-  aboutMKLaptopFrameCrop
+  aboutMKLaptopFrameCrop,
+  rhea
 };

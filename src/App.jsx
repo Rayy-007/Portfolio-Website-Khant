@@ -25,8 +25,8 @@ function App() {
       </div>
       <AboutMe />
       <div className="normal-bg">
-        <Experience />  
         <Project />
+        <Experience />  
       </div>
       <Education />
       <div className="normal-bg">
