@@ -120,13 +120,13 @@ function Project() {
             className={projectTabMenu === "bhea" ? "active" : ""}
             onClick={() => setProjectTabMenu("bhea")}
           >
-            Projects
+            Project
           </li>
           <li
             className={projectTabMenu === "website" ? "active" : ""}
             onClick={() => setProjectTabMenu("website")}
           >
-            Websites
+            Website
           </li>
           <li
             className={projectTabMenu === "app" ? "active" : ""}
