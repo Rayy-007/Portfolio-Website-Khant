@@ -11,6 +11,7 @@ import {
   Hero,
 } from "./components/index";
 import { useTheme } from "./components/utils/ThemeProvider";
+import Experience from "./components/experience/Experience";
 
 function App() {
   const { theme } = useTheme();
@@ -21,7 +22,10 @@ function App() {
       <Header />
       <div className="normal-bg">
         <MySkill />
-        <AboutMe />
+      </div>
+      <AboutMe />
+      <div className="normal-bg">
+        <Experience />  
         <Project />
       </div>
       <Education />

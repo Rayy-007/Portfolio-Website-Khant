@@ -2,6 +2,9 @@
     About Me Section Styling
     ========================= */
 .about {
+  background-color: var(--bg-color);
+}
+.about-con {
   gap: var(--gap);
 }
 

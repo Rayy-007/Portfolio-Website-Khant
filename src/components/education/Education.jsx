@@ -5,8 +5,8 @@ import { stars, Lithan, Scrimba, Yadanabon, stars3, stars4 } from "../Image";
 import ScrollAnimation from "../utils/ScrollAnimation";
 
 function Education() {
-  // Creating testimonial cards
-  const testimonialsCard = educationData.map((data, index) => (
+  // Creating education cards
+  const educationsCard = educationData.map((data, index) => (
     <div key={index} className="card flex-col education">
       <ScrollAnimation>
         <img className="stars" src={data.star} alt="Stars" />
@@ -16,16 +16,16 @@ function Education() {
         <div className="edu">
           <p className="extra-small">Major - {data.study}</p>
           <p className="extra-small">Start date - {data.start}</p>
-          <p className="extra-small">End date -{data.end}</p>
+          <p className="extra-small">End date - {data.end}</p>
         </div>
       </ScrollAnimation>
 
-      <div className="customer flex-row">
+      <div className="education flex-row">
         <ScrollAnimation>
           <img src={data.img} alt="User" />
         </ScrollAnimation>
 
-        <div className="customer-info">
+        <div className="education-info">
           <ScrollAnimation>
             <h4>{data.name}</h4>
           </ScrollAnimation>
@@ -38,8 +38,8 @@ function Education() {
   ));
 
   return (
-    <div id="Education" className="testimonial">
-      <div className=" testimonial-container flex-col container section-padding-2">
+    <div id="Education" className="education">
+      <div className=" education-container flex-col container section-padding-2">
         <div className="title">
           <ScrollAnimation extraAnimation={true}>
             <h4>My Education</h4>
@@ -47,7 +47,7 @@ function Education() {
           </ScrollAnimation>
         </div>
 
-        <div className="cards flex-row">{testimonialsCard}</div>
+        <div className="cards flex-row">{educationsCard}</div>
       </div>
     </div>
   );
@@ -58,26 +58,30 @@ export default Education;
 const educationData = [
   {
     name: "EduClaaS Academy | Lithan",
-    study: "Computer Science",
-    start: "20.1.2022",
-    end: "Ongoing",
+    study: " Pearson BTEC Higher National Diploma (HND) in Computer Science",
+    // start: "20.1.2022",
+    start: "2022",
+    end: "2025",
     img: Lithan,
     star: stars4,
   },
   {
-    name: "Scrimba Academy",
-    study: "Frontend Development",
-    start: "26.2.2023",
-    end: "10.12.2023",
+    name: "Scrimba Academy - Self-paced online bootcamp",
+    study: "Frontend Developer Career Path",
+    // start: "26.2022",
+    // end: "10.12.2023",
+    start: "2022",
+    end: "2023",
     img: Scrimba,
     star: stars,
   },
   {
     name: "Yadanabon University",
-    study: "English Specialist",
-    start: "16.6.2018",
-    end: "Ongoing",
+    study: "Bachelor of Arts (BA) in English",
+    // start: "16.6.2018",
+    start: "2018",
+    end: "2025",
     img: Yadanabon,
-    star: stars3,
+    star: stars4,
   },
 ];

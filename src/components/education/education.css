@@ -5,24 +5,24 @@
   margin-top: 8px;
 }
 
-.testimonial {
+.education {
   background-color: var(--bg-color);
 }
 
-.testimonial-container {
+.education-container {
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--gap);
 }
 
-.testimonial .cards {
+.education .cards {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(1.5vw + 0.5rem);
 }
 
-.testimonial .cards .card {
+.education .cards .card {
   flex: 1;
   border: 1px solid var(--secondary-color);
   border-radius: 5.3px;
@@ -33,17 +33,27 @@
   gap: calc(1.4vw + 0.6rem);
 }
 
-.testimonial .cards .card .stars {
+.education .cards .card .stars {
   align-self: flex-start;
   height: 23px;
 }
 
-.testimonial .cards .card .customer {
+.education .cards .card .education {
   justify-content: start;
   gap: 0.9rem;
 }
 
-.testimonial .cards .card .customer img {
+.education .cards .card .education img {
+  justify-content: start;
   width: 54px;
   height: 54px;
+  border-radius: 8px;
+}
+
+.education .cards .card .education.flex-row {
+  align-items: flex-start;
+}
+
+.education .cards .card .education .education-info h4 {
+  font-size: var(--extra-samll-font-size);
 }
