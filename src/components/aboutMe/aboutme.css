@@ -26,9 +26,11 @@
   width: 100%;
 }
 
-.about .about__img img {
+
+.about-con .about__img img {
   max-width: 100%;
   border-radius: 20px;
+
 }
 
 .about__content li {
@@ -76,7 +78,7 @@
     Responsive Section
     =================== */
 @media screen and (max-width: 987px) {
-  .about {
+  .about-con {
     flex-direction: column-reverse;
   }
 

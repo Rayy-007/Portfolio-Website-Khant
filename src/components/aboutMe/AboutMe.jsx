@@ -10,9 +10,9 @@ function AboutMe() {
     <div id="AboutMe" className="about">
       <div  className="about-con flex-row container section-padding-1">
         <div className="about__img flex-row">
-          <ScrollAnimation>
+          {/* <ScrollAnimation> */}
             <img src={aboutMKFrameCrop} alt="Photo of Me - Min Khant" />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
 
         <div className="about__content">
