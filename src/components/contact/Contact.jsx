@@ -98,9 +98,9 @@ function Contact() {
             <div className="select-input">
               <select required id="topic" name="topic">
                 <option value="">Select One</option>
-                <option value="hire">Interested in hiring me</option>
+                <option value="hire">Interested in hiring you</option>
                 <option value="collaborate">Collaborating on a project</option>
-                <option value="learn">Learn with me</option>
+                <option value="learn">Learn with you</option>
               </select>
             </div>
           </div>
