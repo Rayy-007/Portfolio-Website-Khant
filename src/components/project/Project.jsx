@@ -20,7 +20,7 @@ function Project() {
     }, 800);
   };
   const handleHide = () => {
-    setVisibleProjects(6);
+    setVisibleProjects(9);
     projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
