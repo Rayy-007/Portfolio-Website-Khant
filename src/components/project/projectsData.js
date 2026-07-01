@@ -29,7 +29,7 @@ import {
   rect82,
   samosachai,
   sriraksha,
-  yenrich
+  yenrich,
 } from "../Image";
 
 // Projects Data for Projects Card
@@ -45,7 +45,7 @@ export const projectsData = [
   },
   {
     title: "Bhea - Corporate Management Website",
-    description: 
+    description:
       "Handled maintenance tasks such as lead tracking, new page development, email system fixes and payment gateway integration. Improved overall reliability and visual consistency.",
     websiteURL: "https://www.bhea.com/",
     image: bheaIntegration,
@@ -61,7 +61,7 @@ export const projectsData = [
     type: "bhea",
     languages: ["WordPress", "UI Design", "Event Management"],
   },
-    {
+  {
     title: "Bhea - Corporate Blog Management",
     description:
       "Enhanced blog usability and visual hierarchy for better readability and engagement. Managed content flow and styling.",
@@ -81,7 +81,7 @@ export const projectsData = [
   {
     title: "BlissGrow - E-Commerce Product Website",
     description:
-    "Enhanced user experience by improving checkout flow and updating product listings. Focused on creating a smoother, modern shopping experience.",
+      "Enhanced user experience by improving checkout flow and updating product listings. Focused on creating a smoother, modern shopping experience.",
     websiteURL: "https://www.blissgrow.in/",
     image: blissgrow,
     type: "bhea",
@@ -192,6 +192,16 @@ export const projectsData = [
     image: gpt3,
     type: "website",
     languages: ["React", "Responsive"],
+  },
+  {
+    title: "React Quizzical App",
+    description:
+      "🤹Quizzical App is a dynamic React application that challenges users with a variety of quizzes sourced from an external quiz API.",
+    codeUrl: "https://github.com/Rayy-007/React-Quizzical-App-by-Khant",
+    websiteURL: "https://react-quizzical-app-khant.netlify.app/",
+    image: quizzical,
+    type: "app",
+    languages: ["React", "QuizAPI"],
   },
   {
     title: "React Typing Speed Game",
